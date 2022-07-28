@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+  }
+  
+  main{
+    width: 100%;
+    background-image: linear-gradient( 115deg, rgba(228, 25, 167, 0.8), rgba(85, 8, 68, 0.7)), url("https://images.unsplash.com/photo-1484807352052-23338990c6c6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+  }
+  .form{
+    background: linear-gradient( 115deg, rgba(26, 1, 29, 0.8), rgba(32, 4, 64, 0.7));
+    margin: 0 auto;
+    padding-top: 70px;
+    width: 60%;
+    
+  }
+  .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    flex-direction: column;
+    padding: 50px 0 20px 0;
+   
+  }
+  #title{
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 3rem;
+    color: rgba(184, 12, 112, 0.8);
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px rgb(229, 124, 204),
+        0 0 82px rgb(193, 94, 180),
+        0 0 92px rgb(171, 33, 123),
+        0 0 102px rgb(145, 7, 110),
+        0 0 151px rgb(216, 89, 164);
+  }
+  #description{
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 5px;
+  }
+  #contact-form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    margin: 0 auto;
+    width: 50%;
+   
+  }
+  .uno{
+    padding: 10px;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  #name, #email, #number, #dropdown, #submit{
+    width: 80%;
+    height: 40px;
+    font-size: 1rem;
+    border: transparent;
+    border-radius: 5px;
+    padding-left: 5px;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  input[type="radio"]{
+    width: 50px;
+    height: 20px;
+    cursor: pointer;
+    font-family: 'Josefin Sans', sans-serif;
+
+  }
+  
+  .check{
+    display: flex;
+    flex-direction: column;
+    font-family: 'Josefin Sans', sans-serif;
+    
+  }
+  
+  #message{
+    width: 80%;
+    height: 100px;
+    font-size: 1rem;
+    border: transparent;
+    border-radius: 5px;
+    padding-left: 5px;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  .submit{
+    margin: 20px;
+    box-shadow: 0px 0px 6px #000, 0px 0px 14px #e4e3e3;
+    font-family: 'Josefin Sans', sans-serif;
+  }
+  .submit:hover{
+    background-color: #1b0d14;
+    color: #f60b6d;
+    transition: ease 0.40s;
+  }

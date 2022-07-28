@@ -1,0 +1,106 @@
+ .navbar{
+    display: flex;
+    justify-content: space-around;
+    background-color: #1b0d14;
+    position: fixed;  
+    height: 80px;
+    width: 100%;
+    z-index: 1000; 
+    opacity: 0.8;
+    transition-duration: 0.3sn;
+    margin-top: 0px;
+    box-shadow: 7px 3px 103px 13px rgb(0 0 0 / 75%);
+    -webkit-box-shadow: 7px 3px 103px 13px rgb(0 0 0 / 75%);
+    top: 0;
+    align-items: center;
+   
+}
+.navbar .brand{
+    display: flex;
+    align-items: center;
+}
+.navbar .brand a{
+    color: white;
+    text-decoration: none;
+    font-size: 30px;  
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+}
+
+.navbar ul li{
+    display: inline-block;
+    list-style-type: none;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    position: relative;
+    
+
+} 
+.navbar ul li a{
+    color: rgba(226, 225, 225, 0.836);
+    text-decoration: none;
+    margin-left: 35px;
+    margin-right: 35px;
+   
+} 
+.navbar ul li a::after{
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #e60970;
+    left: 0;
+    bottom: -4px;
+    transition: ease .40s;
+    
+}
+.navbar ul li a:hover{
+    transition: ease 0.40s;
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px rgb(229, 124, 204),
+        0 0 82px rgb(193, 94, 180),
+        0 0 92px rgb(171, 33, 123),
+        0 0 102px rgb(145, 7, 110),
+        0 0 151px rgb(216, 89, 164);
+}
+.navbar ul li a:hover::after{
+    width: 100%;
+    
+}
+.navbar ul li a .btn{
+    padding: 0 15px;
+    margin-left: 35px;
+    margin-right: 35px;
+    height: 40px;
+    display: inline-block;
+    line-height: 42px;
+    background-color: #e60970;
+    color: #1b0d14;
+    border: none;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    transition: all 0.30s;
+    
+}
+.navbar ul li a .btn:hover{
+   background-color: #1b0d14;
+    /* color: #e60970; */
+    transition: ease 0.40s;
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px rgb(229, 124, 204),
+        0 0 82px rgb(193, 94, 180),
+        0 0 92px rgb(171, 33, 123),
+        0 0 102px rgb(145, 7, 110),
+        0 0 151px rgb(216, 89, 164);
+}

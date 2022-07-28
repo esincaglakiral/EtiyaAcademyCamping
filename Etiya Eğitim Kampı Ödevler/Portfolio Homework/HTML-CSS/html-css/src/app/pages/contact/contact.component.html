@@ -1,0 +1,60 @@
+<main>
+    <div class="form">
+      <div class="title">
+      <h1 id="title">Let's Contact</h1>
+      <p id="description">Thank you for choosing us, if you would like to contact us, we will get back to you as soon as possible!</p>
+     </div>
+      <form id="contact-form">
+      
+        <label for="name" id="name-label" class="uno">Name</label>
+        <input type="text" id="name" placeholder="Enter your name" requiered>
+     
+        
+        <label for="email" id="email-label" class="uno">Email</label>
+        <input type="email" id="email" placeholder="Enter your email"  requiered>
+        
+        <label for="dropdown" id="dropdown-label" class="uno">What kind of service would you like us to provide to you? Please select the field you want to work with us in.</label>
+        <select id="dropdown" name="rol">
+          <option disable selected value>Please select </option>
+          <option value="eCommerce">E-Commerce</option>
+          <option value="bankcard">BankCard</option>
+          <option value="financePanel">Crypto/Finance panel</option>
+          <option value="workflow">Workflow Panel For Customers</option>
+          <option value="seo">SEO Services</option>
+          <option value="consultancy">Consultancy</option>
+        </select>
+        <div>
+        <p class="uno">Would you recommend our Services to a friend?</p>
+        <label for="btn" id="btn-label" class="uno">Definitely</label>
+        <input type="radio" name="user-recommend" value="definitely" class="input" checked>
+        <label for="btn" id="btn-label" class="uno">Maybe</label>
+        <input type="radio" name="user-recommend" value="maybe" class="input">
+        <label for="btn" id="btn-label" class="uno">Not sure</label>
+          <input type="radio" name="user-recommend" value="not-sure" class="input"></div>
+       
+          <p class="uno">Which of the following services would you like us to offer you for the service we will be working with? (Check all that apply)</p>
+        <div class="check">
+        <label class="uno">
+        <input name="prefer" type="checkbox" value="front-end projects" class="checkbox-input">Front-end projects</label>
+        <label class="uno">
+        <input name="prefer" type="checkbox" value="back-end projects" class="checkbox-input">Back-end projects</label>
+   
+        <label class="uno">
+      <input name="prefer" type="checkbox" value="social-media" class="checkbox-input">Social media (Marketing)</label>
+   
+        <label class="uno">
+      <input name="prefer" type="checkbox" value="ui-ux-design" class="checkbox-input">UI/UX Design Tutorials++</label>
+          <label class="uno">
+      <input name="prefer" type="checkbox" value="other" class="checkbox-input">Other (send us a message)</label>
+        </div>
+        
+        <p class="uno">Any comments or suggestions?</p>
+        <textarea id="message" class="textarea uno" name="message" placeholder="Enter your message here..."></textarea>
+        
+       
+        
+        <button type="submit" id="submit" class="submit uno">Send your application</button>
+        
+      </form>
+     </div>
+   </main>

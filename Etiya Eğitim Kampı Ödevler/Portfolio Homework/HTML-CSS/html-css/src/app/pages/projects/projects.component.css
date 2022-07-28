@@ -1,0 +1,98 @@
+.projectpage{
+    width: 100%;
+  
+}
+.projects{
+    font-family: 'Josefin Sans', sans-serif;
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(to right, #4d0e2e , #e60970);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    align-items: center;
+    opacity: 0.9;
+}
+.projects .center{
+    text-align: center;
+    
+}
+
+.projects .center h2{
+    font-size: 50px;
+    margin-bottom: 15px;
+    margin-top: 150px;
+    color: #1b0d14;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px rgb(229, 124, 204),
+        0 0 82px rgb(193, 94, 180),
+        0 0 92px rgb(171, 33, 123),
+        0 0 102px rgb(145, 7, 110),
+        0 0 151px rgb(216, 89, 164);
+}
+.projects .center p{
+    color: rgba(226, 225, 225, 0.426);
+    letter-spacing: 1px;
+    line-height: 28px;
+    
+}
+
+.projects-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(370px, auto));
+    margin-top: 4.5rem;
+    align-items: center;
+    grid-gap: 2rem;
+    
+}
+
+.row{
+    background-color: rgba(226, 225, 225, 0.426);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    padding: 55px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .35s;
+    margin-bottom: 70px;
+    margin-left: 70px;
+    margin-right: 70px;
+}
+.row:hover{
+    box-shadow: 0 15px 26px 0 rgba(0, 0, 0, 0.548);
+    background-color: #1b0d14;
+    color: #e60970;
+    transition: ease 0.40s;
+    transform: translateY(-8px);
+}
+.row i{
+    color: #462a37;
+    margin-bottom: 20px;
+    font-size: 2.7rem;
+}
+.row h3{
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #e8b5d3;
+}
+.row p{
+    line-height: 30px;
+    /* color: #462a37; */
+}
+ .row i{
+    color: #1b0d14;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px rgb(229, 124, 204),
+        0 0 82px rgb(193, 94, 180),
+        0 0 92px rgb(171, 33, 123),
+        0 0 102px rgb(145, 7, 110),
+        0 0 151px rgb(216, 89, 164);
+ }

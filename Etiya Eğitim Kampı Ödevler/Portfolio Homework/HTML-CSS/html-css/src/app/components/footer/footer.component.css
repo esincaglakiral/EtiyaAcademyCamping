@@ -1,0 +1,29 @@
+.footer{
+   
+    background-color: #1b0d14;
+    display: flex;
+    justify-content: center; 
+}
+.footer ul li{
+    display: inline-block;
+    list-style-type: none;
+    margin: 30px 30px;
+    padding: 50px;
+}
+.footer ul li a:hover{
+    color: #f60b6d;
+    font-weight: 600;
+    transition: 0.30s;
+    font-size: 20px;
+}
+.footer ul li a{
+    color: rgba(226, 225, 225, 0.89);
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+} 
+
+.footer ul li a i{
+    font-size: 20px;
+    color: #f60b6d;
+}
