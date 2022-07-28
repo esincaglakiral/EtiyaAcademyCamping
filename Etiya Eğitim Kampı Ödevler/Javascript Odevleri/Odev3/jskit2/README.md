@@ -202,15 +202,15 @@ burada yapılmak istenen şey koşulllara göre input içerisine girilen verinin
 ------------------------------------------------------ Validation (doğrulama) ----------------------------------------------------------------
 validasyon keyword'leri:
 
-disabled: HTML inputunu disabled olarak işaretlersek o inputu sadece görebiliriz, fakat herhangi bir veri girişi yapamayız
-readonly: sadece okunabilir
-max: number için
-min: number için
-pattern(e.g [A-Za-z]{3}): numerik olmayan ve sadece 3 karakter girilebilecek bir alan seçmiş oluruz
-required: zorunlu alan kulllanımı gerektiğinde
-type: tipi/türünü vermemizi sağlar
-Maxlength: belli sayıda/uzunlukta veri girişi yapabilmemizi sağlar(bizim belirleyeceğimiz max uzunluk)
-Novalidate: formlar için kullanılmaktadır, formda validasyon yapmak istemediğimizi belirtiriz
+- disabled: HTML inputunu disabled olarak işaretlersek o inputu sadece görebiliriz, fakat herhangi bir veri girişi yapamayız
+- readonly: sadece okunabilir
+- max: number için
+- min: number için
+- pattern(e.g [A-Za-z]{3}): numerik olmayan ve sadece 3 karakter girilebilecek bir alan seçmiş oluruz
+- required: zorunlu alan kulllanımı gerektiğinde
+- type: tipi/türünü vermemizi sağlar
+- Maxlength: belli sayıda/uzunlukta veri girişi yapabilmemizi sağlar(bizim belirleyeceğimiz max uzunluk)
+- Novalidate: formlar için kullanılmaktadır, formda validasyon yapmak istemediğimizi belirtiriz
 
 
 
