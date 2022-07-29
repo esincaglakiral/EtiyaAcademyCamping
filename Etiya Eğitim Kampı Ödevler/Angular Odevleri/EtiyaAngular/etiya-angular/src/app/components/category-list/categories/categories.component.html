@@ -1,0 +1,27 @@
+<ng-template [ngIf]="categoryList" [ngIfElse]="loading">
+<div class="list-group">
+  <button
+    type="button"
+    class="list-group-item list-group-item-action active" style="background-color: green;"
+    
+    aria-current="true"
+  >
+    Category List
+  </button>
+  <div class="list-group" *ngFor="let c of categoryList">
+    <button
+      type="button"
+      (click)="getCategoriesById(c)"
+      class="list-group-item list-group-item-action"
+    >
+      {{ c.name }}
+    </button>
+  </div>
+</div>
+</ng-template>
+
+<ng-template #loading>
+  <div class="spinner-border text-success" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+</ng-template>
