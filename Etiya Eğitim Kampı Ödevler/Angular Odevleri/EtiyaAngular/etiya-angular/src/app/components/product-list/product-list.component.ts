@@ -34,6 +34,7 @@ export class ProductListComponent implements OnInit {
   getProducts(){
    this.productsService.getList().subscribe((response) => {
     this.productList = response;
+    //ürünlerin gelmesini istemezsek response yerine [] koyarız
    });
   }
  

@@ -18,6 +18,7 @@
 </div>  -->
 
 <ng-template [ngIf]="productList" [ngIfElse]="loading">
+  <ng-template [ngIf]="productList.length > 0" [ngIfElse]="alert">
   <div class="row">
     <div class="col-4" *ngFor="let pr of productList">
       <etiya-product-card
@@ -26,6 +27,12 @@
       ></etiya-product-card>
     </div>
   </div>
+</ng-template>
+<ng-template #alert>
+  <div class="alert alert-danger" role="alert">
+    This is a danger alert—check it out!
+</div>
+</ng-template>
 </ng-template>
 
 <ng-template #loading>
