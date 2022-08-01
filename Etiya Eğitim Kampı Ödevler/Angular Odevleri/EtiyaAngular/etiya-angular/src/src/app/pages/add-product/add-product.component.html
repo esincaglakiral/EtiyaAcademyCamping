@@ -1,0 +1,32 @@
+
+<br><br>
+<p>add-product works!</p>
+<br><br>
+
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Email address</label>
+  <input
+    [(ngModel)] = "email"
+    (ngModelChange)="onEmailChange($event)"
+    type="email"
+    class="form-control"
+    id="exampleFormControlInput1"
+    placeholder="name@example.com"
+  />
+  <p>{{email}}</p>
+</div>
+
+
+<div class="mb-3">
+  <label for="exampleFormControlInput1" class="form-label">Password</label>
+  <input
+    [(ngModel)] = "password"
+    type="password"
+    class="form-control"
+    id="exampleFormControlInput1"
+    placeholder="*******"
+  />
+  <p>{{password}}</p>
+</div>
+
+

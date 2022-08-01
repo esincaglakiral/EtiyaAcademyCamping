@@ -1,0 +1,63 @@
+<form *ngIf="customer" [formGroup]="updateCustomerList" (ngSubmit)="updateList()">
+    <div class="mb-3">
+        <label for="companyName" class="form-label">Company Name</label>
+        <input type="text" class="form-control" id="companyName" placeholder="
+        please enter company name you want to update" formControlName="companyName" >
+    </div>
+
+    <div class="mb-3">
+        <label for="contactName" class="form-label">Contact Name</label>
+        <input type="text" class="form-control" id="contactName" placeholder="
+        please enter contact name you want to update" formControlName="contactName" >
+    </div>
+
+    <div class="mb-3">
+        <label for="contactTitle" class="form-label">Contact Title</label>
+        <input type="text" class="form-control" id="contactTitle" placeholder="
+        please enter company title you want to update" formControlName="contactTitle">
+    </div>
+
+
+    <div class="mb-3">
+        <label for="street" class="form-label">Street</label>
+        <input type="text" class="form-control" id="street" placeholder="
+        please enter street you want to update" formControlName="street" >
+    </div>
+
+    <div class="mb-3">
+        <label for="city" class="form-label">City</label>
+        <input type="text" class="form-control" id="city" placeholder="
+        please enter city you want to update" formControlName="city" >
+    </div>
+
+    <div class="mb-3">
+        <label for="region" class="form-label">Region</label>
+        <input type="text" class="form-control" id="region" placeholder="
+        please enter region you want to update" formControlName="region" >
+    </div>
+
+    <div class="mb-3">
+        <label for="postalCode" class="form-label">Postal Code</label>
+        <input type="text" class="form-control" id="postalCode" placeholder="
+        please enter postal code you want to update" formControlName="postalCode" >
+    </div>
+
+    <div class="mb-3">
+        <label for="country" class="form-label">Country</label>
+        <input type="text" class="form-control" id="country" placeholder="
+        please enter country you want to update" formControlName="country">
+    </div>
+
+    <div class="mb-3">
+        <label for="phone" class="form-label">Phone</label>
+        <input type="text" class="form-control" id="phone" placeholder="
+        please enter phone number" formControlName="phone" >
+    </div>
+
+    <div class="mb-3">
+        <label for="customerKey" class="form-label">Customer Key</label>
+        <input type="text" class="form-control" id="customerKey" placeholder="
+        please enter customer key" formControlName="customerKey">
+    </div>
+    <div class="mb-3"><button type="submit" class="btn btn-success">Update</button></div>
+</form>

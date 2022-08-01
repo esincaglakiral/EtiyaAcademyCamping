@@ -1,0 +1,45 @@
+<p>sepetinizde {{ cartItems.length }} ürün var</p>
+
+ <!-- <div class="row">
+  <div   class="col-4">
+    <ul class="list-group" *ngFor="let c of categoryList">
+      <li class="list-group-item">{{c.name}}</li>
+    </ul>
+  </div>
+
+  <div class="col-8 d-flex flex-wrap">
+    <div *ngFor="let p of productList" class="col-4">
+      <etiya-product-card
+        (onBtnClick)="addToCard($event)"
+        [product]="p"
+      ></etiya-product-card>
+    </div>
+  </div>
+</div>  -->
+
+<ng-template [ngIf]="productList" [ngIfElse]="loading">
+  <ng-template [ngIf]="productList.length > 0" [ngIfElse]="alert">
+  <div class="row">
+    <div class="col-4" *ngFor="let pr of productList">
+      <etiya-product-card
+        (onBtnClick)="addToCard($event)"
+        [product]="pr"
+      ></etiya-product-card>
+    </div>
+  </div>
+</ng-template>
+<ng-template #alert>
+  <div class="alert alert-danger" role="alert">
+    This is a danger alert—check it out!
+</div>
+</ng-template>
+</ng-template>
+
+<ng-template #loading>
+  <div class="spinner-border text-success" role="status">
+    <span class="visually-hidden">Loading...</span>
+  </div>
+  <div class="alert alert-danger" role="alert">
+    Bu ürün stokta kalmamıştır!!!!
+  </div>
+</ng-template>
