@@ -4,12 +4,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ProductListComponent } from './components/product-list/product-list.component';
 import { AddProductComponent } from './pages/add-product/add-product.component';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HomepageComponent } from './pages/homepage/homepage.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ProductCardComponent } from './components/product-card/product-card.component';
 import { HttpClientModule } from '@angular/common/http';
 import { CategoriesComponent } from './components/category-list/categories/categories.component';
+import { RegisterComponent } from './pages/register/register.component';
+import { DashboardCustomersComponent } from './pages/dashboard-customers/dashboard-customers.component';
+import { UpdateCustomersComponent } from './pages/update-customers/update-customers.component'
 
 @NgModule({
   declarations: [
@@ -19,13 +22,18 @@ import { CategoriesComponent } from './components/category-list/categories/categ
     HomepageComponent,
     NavbarComponent,
     ProductCardComponent,
-    CategoriesComponent
+    CategoriesComponent,
+    RegisterComponent,
+    DashboardCustomersComponent,
+    UpdateCustomersComponent
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

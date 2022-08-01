@@ -1,0 +1,65 @@
+<h3>Customer Register Form</h3>
+<br>
+<form [formGroup]="registerForm">
+
+  <div class="mb-3">
+    <label for="companyName" class="form-label">Company Name</label>
+    <input type="text" class="form-control" id="companyName" placeholder="Please enter the company name" formControlName="companyName">
+</div>
+
+<div class="mb-3">
+    <label for="contactName" class="form-label">Contact Name</label>
+    <input type="text" class="form-control" id="contactName" placeholder="Please enter the contact name" formControlName="contactName">
+</div>
+
+<div class="mb-3">
+    <label for="contactTitle" class="form-label">Contact Title</label>
+    <input type="text" class="form-control" id="contactTitle" placeholder="Please enter the contact title" formControlName="contactTitle">
+</div>
+
+
+<div class="mb-3">
+    <label for="street" class="form-label">Street</label>
+    <input type="text" class="form-control" id="street" placeholder="Please enter the street" formControlName="street">
+</div>
+
+<div class="mb-3">
+    <label for="city" class="form-label">City</label>
+    <input type="text" class="form-control" id="city" placeholder="Please enter the city" formControlName="city">
+</div>
+
+<div class="mb-3">
+    <label for="region" class="form-label">Region</label>
+    <input type="text" class="form-control" id="region" placeholder="Please enter the region" formControlName="region">
+</div>
+
+<div class="mb-3">
+    <label for="postalCode" class="form-label">Postal Code</label>
+    <input type="text" class="form-control" id="postalCode" placeholder="Please enter the postal code" formControlName="postalCode">
+</div>
+
+<div class="mb-3">
+    <label for="country" class="form-label">Country</label>
+    <input type="text" class="form-control" id="country" placeholder="Please enter the country" formControlName="country">
+</div>
+
+<div class="mb-3">
+    <label for="phone" class="form-label">Phone</label>
+    <input type="text" class="form-control" id="phone" placeholder="Please enter the phone" formControlName="phone">
+</div>
+
+<div class="mb-3">
+    <label for="customerKey" class="form-label">Customer Key</label>
+    <input type="text" class="form-control" id="customerKey" placeholder="Please enter the customer key" formControlName="customerKey">
+</div>
+
+
+</form>
+
+
+
+
+
+<div class="mb-3">
+  <button (click)="register()" class="btn btn-primary">Kayıt Ol</button>
+</div>
