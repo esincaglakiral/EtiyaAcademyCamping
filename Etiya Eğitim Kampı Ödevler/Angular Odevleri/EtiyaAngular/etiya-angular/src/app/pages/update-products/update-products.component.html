@@ -1,0 +1,50 @@
+<form *ngIf="productForm" [formGroup]="productForm" (ngSubmit)="save()">
+
+    <div class="mb-3">
+        <label for="supplierId" class="form-label">Supplier Id</label>
+        <input type="text" formControlName="supplierId" class="form-control" id="supplierId" placeholder="" />
+      </div>
+      
+      <div class="mb-3">
+        <label for="categoryId" class="form-label">Category Id</label>
+        <input type="text" formControlName="categoryId" class="form-control" id="categoryId" placeholder="" />
+      </div>
+      
+      <div class="mb-3">
+        <label for="quantityPerUnit" class="form-label">Quantity Per Unit</label>
+        <input type="text" formControlName="quantityPerUnit" class="form-control" id="quantityPerUnit" placeholder="" />
+      </div>
+      
+      <div class="mb-3">
+        <label for="unitPrice" class="form-label">Unit Price</label>
+        <input type="text" formControlName="unitPrice" class="form-control" id="unitPrice" placeholder="" />
+      </div>
+      
+      <div class="mb-3">
+        <label for="unitsInStock" class="form-label">Units In Stock</label>
+        <input type="text" formControlName="unitsInStock" class="form-control" id="unitsInStock" placeholder="" />
+      </div>
+      
+      <div class="mb-3">
+        <label for="unitsOnOrder" class="form-label">units On Order</label>
+        <input type="text" formControlName="unitsOnOrder" class="form-control" id="unitsOnOrder" placeholder="" />
+      </div>
+      
+      <div class="mb-3">
+        <label for="reorderLevel" class="form-label">Reorder Level</label>
+        <input type="text" formControlName="reorderLevel" class="form-control" id="reorderLevel" placeholder="" />
+      </div>
+      
+      <div class="mb-3">
+        <label for="discontinued" class="form-label">Discontinued</label>
+        <input type="text" formControlName="discontinued" class="form-control" id="discontinued" placeholder="" />
+      </div>
+      
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" formControlName="name" class="form-control" id="name" placeholder="" />
+      </div>
+      
+      <div class="mb-3"><button type="submit" class="btn btn-danger">Save</button></div>
+
+</form>

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
 import { Customer } from 'src/app/models/customers';
 import { CustomersService } from 'src/app/services/customers/customers.service';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-register',
@@ -13,7 +14,7 @@ export class RegisterComponent implements OnInit {
   registerForm!: FormGroup;  //state
   // companyName = new FormControl('', Validators.required);
 
-  constructor(private formBuilder: FormBuilder, private customerService: CustomersService) { }
+  constructor(private formBuilder: FormBuilder, private customerService: CustomersService, private toastr: ToastrService) { }
 
   ngOnInit(): void {
     this.createRegisterForm();
@@ -67,12 +68,13 @@ export class RegisterComponent implements OnInit {
     );
   }
 
-register(): void
+register()
 {
-  if(this.registerForm.invalid){
+  if(!this.registerForm.valid){
     //veya --> !this.registerForm.valid diyebiliriz. Bu geçersiz anlamına gelir
 
     console.warn("Gerekli alanları doldurunuz!!");
+   
     return;
   }
 
@@ -84,11 +86,7 @@ register(): void
 
   this.customerService.addCustomer(customer).subscribe(response =>{
     console.info(response);
-    setTimeout(() => {
-      location.reload();
-      location.href="/dashboard-customers"
-      alert("Customer added!")
-    }, 1000);
+   
   });
   // console.log(this.registerForm.value);
 }

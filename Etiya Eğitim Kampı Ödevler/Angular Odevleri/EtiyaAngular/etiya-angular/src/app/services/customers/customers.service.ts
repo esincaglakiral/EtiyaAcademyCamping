@@ -8,8 +8,6 @@ import { Customer } from 'src/app/models/customers';
   providedIn: 'root'
 })
 export class CustomersService {
-
-
   apiControllerUrl: string = `${environment.apiUrl}/customers`; //property
   
   constructor(private httpClient: HttpClient) { }
@@ -24,11 +22,11 @@ export class CustomersService {
     return this.httpClient.delete<Customer>(`${this.apiControllerUrl}/${id}`)
   }
 
-  getCustomerById(val:number):Observable<Customer>{
-    return this.httpClient.get<Customer>(`${this.apiControllerUrl}/${val}`)
+  getCustomerById(id:number):Observable<Customer>{
+    return this.httpClient.get<Customer>(`${this.apiControllerUrl}/${id}`)
   }
   
-  updateList(customer:Customer):Observable<Customer>{
+  updateList(customer:Customer):Observable<Customer>{ // her verinin kendi içinde çekilebiklmesine olanak sağlar observable
     return this.httpClient.put<Customer>(`${this.apiControllerUrl}/${customer.id}`,customer)
   }
 

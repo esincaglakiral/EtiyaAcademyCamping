@@ -13,6 +13,13 @@ import { CategoriesComponent } from './components/category-list/categories/categ
 import { RegisterComponent } from './pages/register/register.component';
 import { DashboardCustomersComponent } from './pages/dashboard-customers/dashboard-customers.component';
 import { UpdateCustomersComponent } from './pages/update-customers/update-customers.component'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ToastrModule } from 'ngx-toastr';
+import { ProductsDashboardComponent } from './pages/products-dashboard/products-dashboard.component';
+import { KdvPipe } from './pipes/kdv/kdv.pipe';
+import { SaleDirective } from './directives/sale/sale.directive';
+
+import { UpdateProductsComponent } from './pages/update-products/update-products.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +32,11 @@ import { UpdateCustomersComponent } from './pages/update-customers/update-custom
     CategoriesComponent,
     RegisterComponent,
     DashboardCustomersComponent,
-    UpdateCustomersComponent
+    UpdateCustomersComponent,
+    ProductsDashboardComponent,
+    KdvPipe,
+    SaleDirective,
+    UpdateProductsComponent
     
   ],
   imports: [
@@ -33,7 +44,9 @@ import { UpdateCustomersComponent } from './pages/update-customers/update-custom
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    BrowserAnimationsModule,
+    ToastrModule.forRoot(),
   ],
   providers: [],
   bootstrap: [AppComponent]
