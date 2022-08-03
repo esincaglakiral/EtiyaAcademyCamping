@@ -16,7 +16,7 @@ const routes: Routes = [
   {path:'dashboard-customers/customers', component:DashboardCustomersComponent},
   {path: 'dashboard-customers/customer/:id',component:UpdateCustomersComponent },
   {path: 'products-dashboard/products',component:ProductsDashboardComponent },
-  {path: 'products-dashboard/product/id', component:UpdateProductsComponent},
+  {path: 'products-dashboard/product/:id', component:UpdateProductsComponent},
   {path: 'products-dashboard/product/addProduct', component:UpdateProductsComponent},
 ];
 

@@ -4,12 +4,12 @@ import { Directive, ElementRef, HostListener, Input } from '@angular/core';
   selector: '[appClickProductCard]'
 })
 export class ClickProductCardDirective {
-  @Input() inOnClick:boolean = true;
+  // @Input() inOnClick:boolean = true;
 
   constructor(private elementRef:ElementRef) { }
 
   @HostListener('click',) onClick(){
-    if(this.inOnClick) return;
+    // if(this.inOnClick) return;
     this.elementRef.nativeElement.style.opacity = 0.7;
 
   }
