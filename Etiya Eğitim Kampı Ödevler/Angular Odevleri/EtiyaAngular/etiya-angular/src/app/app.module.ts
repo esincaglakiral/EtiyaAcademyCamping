@@ -18,8 +18,10 @@ import { ToastrModule } from 'ngx-toastr';
 import { ProductsDashboardComponent } from './pages/products-dashboard/products-dashboard.component';
 import { KdvPipe } from './pipes/kdv/kdv.pipe';
 import { SaleDirective } from './directives/sale/sale.directive';
-
 import { UpdateProductsComponent } from './pages/update-products/update-products.component';
+import { ProductFilteredPipe } from './pipes/productFiltered/product-filtered.pipe';
+import { ClickProductCardDirective } from './directives/clickProductCard/click-product-card.directive';
+
 
 @NgModule({
   declarations: [
@@ -36,8 +38,9 @@ import { UpdateProductsComponent } from './pages/update-products/update-products
     ProductsDashboardComponent,
     KdvPipe,
     SaleDirective,
-    UpdateProductsComponent
-    
+    UpdateProductsComponent,
+    ProductFilteredPipe,
+    ClickProductCardDirective,
   ],
   imports: [
     BrowserModule,

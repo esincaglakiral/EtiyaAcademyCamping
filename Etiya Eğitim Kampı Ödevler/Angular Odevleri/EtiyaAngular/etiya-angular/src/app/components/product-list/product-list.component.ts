@@ -1,8 +1,5 @@
-import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
-import { Categories } from 'src/app/models/categories';
 import { Product } from 'src/app/models/product';
-import { CategoriesService } from 'src/app/services/categories/categories.service';
 import { ProductsService } from 'src/app/services/products/products.service';
 
 @Component({
@@ -11,17 +8,16 @@ import { ProductsService } from 'src/app/services/products/products.service';
   styleUrls: ['./product-list.component.css']
 })
 export class ProductListComponent implements OnInit {
-  // productList: any[] = [];
+
      productList!: Product[];
      cartItems:any[]=[];
-    //  categoryList!: Categories[];
-    // httpClient!: HttpClient;
+     today: number = Date.now();
+     filterProductName:string="";
 
      
   constructor(private productsService: ProductsService) {
     // *dependency ınjection ile angular otomatik olarak inject eder.
-    // this.httpClient = this.httpClient;
-    // , private categoriesService: CategoriesService
+
    }
 
   ngOnInit(): void {
@@ -38,18 +34,11 @@ export class ProductListComponent implements OnInit {
    });
   }
  
-  //  getCategories(){
-  //   this.categoriesService.getCategoryList().subscribe((response) => {
-  //    this.categoryList = response;
-  //   });
-  //  }
-
-
 
   addToCard(product:Product){
   console.log(product);
 
-    let itemToFind = this.cartItems.find((c) => c == product.name);
+    let itemToFind = this.cartItems.find((pr) => pr == product.name);
     if(!itemToFind){
       this.cartItems.push(product.name);  
     }

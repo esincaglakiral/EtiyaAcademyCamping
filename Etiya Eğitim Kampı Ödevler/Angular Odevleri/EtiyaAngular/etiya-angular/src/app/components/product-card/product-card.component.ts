@@ -13,6 +13,7 @@ export class ProductCardComponent implements OnInit {
   onMouseColor: string = 'blue';
   isCard: boolean = true;
   onSaleText: string = 'İndirim!!!';
+  
   constructor() { }
 
   ngOnInit(): void {
