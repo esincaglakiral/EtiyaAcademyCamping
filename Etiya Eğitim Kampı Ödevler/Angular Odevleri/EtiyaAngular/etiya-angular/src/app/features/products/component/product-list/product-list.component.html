@@ -1,0 +1,41 @@
+<p>sepetinizde {{ cartItems.length }} ürün var</p>
+<span
+  class=""
+  style="
+    color: rgb(43, 73, 60);
+    background-color: rgb(184, 238, 224);
+    float: right;
+  "
+  >Date: {{ today | date: "medium" }}</span
+>
+<input
+  class="form-control"
+  type="text"
+  [(ngModel)]="filterProductName"
+  placeholder="Search Product Name"
+  style="width: 200px"
+/>
+
+<ng-template [ngIf]="productList" [ngIfElse]="loading">
+  <div *ngIf="productList.length >0; else emptyProduct">
+  <div class="row">   
+      <ng-container *ngIfNot="(productList | productFiltered:filterProductName)?.length === 0; else notFound" > 
+          <div class="col-4" *ngFor="let p of productList | productFiltered:filterProductName" >                 
+              <etiya-product-card (onBtnClick)="addToCard($event)" [product]="p"></etiya-product-card>                                 
+          </div>
+      </ng-container> 
+      </div>
+  </div>
+</ng-template>
+
+<ng-template #emptyProduct>
+  <div class="alert alert-danger" role="alert">
+    Ürünün stoğu kalmamıştır
+  </div>
+</ng-template>
+<ng-template #loading>
+  <div class="spinner-border text-primary" role="status">
+      <span class="visually-hidden">Loading...</span>
+  </div>
+</ng-template>
+<ng-template #notFound>No Result Found!</ng-template> 
