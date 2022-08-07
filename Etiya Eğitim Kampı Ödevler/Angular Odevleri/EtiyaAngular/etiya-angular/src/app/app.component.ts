@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { Product } from './models/product';
 
 @Component({
   selector: 'app-root',
@@ -7,8 +6,9 @@ import { Product } from './models/product';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
+  title = 'etiya-angular';
+  
 
-  links:string[] = ['Home', 'Add Product', 'Product List'];
 
   ngOnInit(): void {
       this.counter += 5;

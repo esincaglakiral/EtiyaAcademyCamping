@@ -1,12 +1,25 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
+import { HomepageComponent } from './pages/homepage/homepage.component';
+import { NavbarComponent } from './layouts/navbar/navbar.component';
+import { SharedRoutingModule } from './shared-routing.module'
+import { CategoriesModule } from '../features/categories/categories.module';
+import { ProductsModule } from '../features/products/products.module';
+import { BrowserModule } from '@angular/platform-browser';
 
 
 @NgModule({
-  declarations: [],
+  declarations: [
+    NavbarComponent,    
+    HomepageComponent,
+  ],
+  
   imports: [
-    CommonModule
+    CommonModule,
+    SharedRoutingModule,    
+    CategoriesModule,
+    ProductsModule,
+    BrowserModule,
   ]
 })
 export class SharedModule { }
