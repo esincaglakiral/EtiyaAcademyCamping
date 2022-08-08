@@ -16,8 +16,11 @@ export class AuthService {
   apicontrollerUrl:string = `${environment.apiUrl}/auth`;
 
 
-  constructor(private httpClient:HttpClient, private localStrorageService:LocalStrorageService, 
-  private jwtHelperService:JwtHelperService) { }
+  constructor(
+    private httpClient:HttpClient, 
+    private localStrorageService:LocalStrorageService, 
+    private jwtHelperService:JwtHelperService
+    ) { }
 
   login(userForLoginModel:UserForLoginModel): Observable<UserLoginResponseModel>{
     return this.httpClient.post<UserLoginResponseModel>(`${this.apicontrollerUrl}/login`,userForLoginModel)

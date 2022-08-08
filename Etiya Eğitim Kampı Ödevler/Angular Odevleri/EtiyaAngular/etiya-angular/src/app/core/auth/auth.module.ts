@@ -19,13 +19,13 @@ import { tokenGetter } from './services/auth/auth.service';
     AuthRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
-    // JwtModule.forRoot({
-    //   config:{
-    //     tokenGetter: tokenGetter,
-    //     allowedDomains: [environment.apiUrl],
-    //     disallowedRoutes: [],
-    //   }
-    // })
+    JwtModule.forRoot({
+      config:{
+        tokenGetter: tokenGetter,
+        allowedDomains: [environment.apiUrl],
+        disallowedRoutes: [],
+      }
+    })
   ],
     providers:[
       {provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true}

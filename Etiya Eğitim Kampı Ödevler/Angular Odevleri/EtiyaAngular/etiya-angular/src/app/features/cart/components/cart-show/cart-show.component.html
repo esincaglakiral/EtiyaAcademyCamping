@@ -1,0 +1,13 @@
+
+<li *ngIf="cartShowSummary" class="btn-group" style="padding-right: 10px;">
+    <a class="btn btn-dark dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+      Cart
+    </a>    
+    <ul class="dropdown-menu">      
+      <li *ngFor="let cartItem of cartShowSummary"><a
+         class="dropdown-item">
+         <span class="badge bg-dark" style="padding-right:10px ;">{{cartItem.quantity}}</span>
+         {{cartItem.product.name}}<span class="badge bg-success" style="cursor: pointer;"  (click)="deleteProductFromCart(cartItem)">Delete</span></a></li>
+      <li><a class="dropdown-item" routerLink="/cart-detail">Sepete git</a></li>
+    </ul>
+</li>

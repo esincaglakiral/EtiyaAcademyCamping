@@ -6,6 +6,7 @@ import { SharedRoutingModule } from './shared-routing.module'
 import { CategoriesModule } from '../features/categories/categories.module';
 import { ProductsModule } from '../features/products/products.module';
 import { BrowserModule } from '@angular/platform-browser';
+import { CartModule } from '../features/cart/cart.module';
 
 
 @NgModule({
@@ -20,6 +21,8 @@ import { BrowserModule } from '@angular/platform-browser';
     CategoriesModule,
     ProductsModule,
     BrowserModule,
-  ]
+    CartModule,
+  ],
+  exports:[NavbarComponent]
 })
 export class SharedModule { }

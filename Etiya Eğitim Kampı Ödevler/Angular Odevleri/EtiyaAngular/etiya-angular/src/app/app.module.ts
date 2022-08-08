@@ -18,12 +18,17 @@ import { SharedModule } from './shared/shared.module';
 import { AuthModule } from './core/auth/auth.module'
 import { CategoriesModule } from './features/categories/categories.module';
 import { CustomersModule } from './features/customers/customers.module';
+import { CartModule } from './features/cart/cart.module';
+
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
     RegisterComponent,
+    
+   
   ],
   imports: [
     BrowserModule,
@@ -39,6 +44,7 @@ import { CustomersModule } from './features/customers/customers.module';
     AuthModule,
     CategoriesModule,
     CustomersModule,
+    CartModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
