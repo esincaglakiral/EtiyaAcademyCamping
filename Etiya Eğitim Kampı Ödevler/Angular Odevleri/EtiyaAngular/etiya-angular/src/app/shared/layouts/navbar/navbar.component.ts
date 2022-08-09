@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { TokenUserModel } from 'src/app/core/auth/models/tokenUserModel';
 import { AuthService } from 'src/app/core/auth/services/auth/auth.service';
 import { CartSummaryService } from 'src/app/features/cart/services/cart-summary.service';
 
@@ -10,7 +12,11 @@ import { CartSummaryService } from 'src/app/features/cart/services/cart-summary.
 })
 export class NavbarComponent implements OnInit {
 
-  constructor(private authService:AuthService, private cartSummaryService:CartSummaryService) { }
+  tokenUserModel$! : Observable<TokenUserModel | undefined>
+
+  constructor(private authService:AuthService) {
+    this.tokenUserModel$ = this.authService.tokenUserModel$
+   }
 
   ngOnInit(): void {
   }

@@ -41,7 +41,6 @@ import { CartModule } from './features/cart/cart.module';
     ProductsModule,
     CoreModule,
     SharedModule,
-    AuthModule,
     CategoriesModule,
     CustomersModule,
     CartModule,

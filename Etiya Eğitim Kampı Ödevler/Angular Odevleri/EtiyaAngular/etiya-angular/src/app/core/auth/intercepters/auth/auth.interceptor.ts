@@ -13,9 +13,9 @@ export class AuthInterceptor implements HttpInterceptor {
 
   constructor(private jwtHelperService:JwtHelperService) {}
 
-  intercept(request: HttpRequest<unknown>, next: HttpHandler): Observable<HttpEvent<unknown>> {
+  intercept(request: HttpRequest<unknown>, next: HttpHandler): Observable<HttpEvent<unknown>> {  //kimliğimiz yanımızda yok
     const token = this.jwtHelperService.tokenGetter();
-    const newRequest = request.clone(
+    const newRequest = request.clone(  // buradan itibaren kimlik yanımızda ve backende kimliğimiz ile istek atabiliriz
       {
         headers : request.headers.set('Authorization', `Bearer ${token}`)
       }

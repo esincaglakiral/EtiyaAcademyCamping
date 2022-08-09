@@ -8,6 +8,8 @@ import { JwtModule } from "@auth0/angular-jwt";
 import { environment } from 'src/environments/environment';
 import { AuthInterceptor } from './intercepters/auth/auth.interceptor';
 import { tokenGetter } from './services/auth/auth.service';
+import { authReducers } from './store/auth.reducers';
+import { StoreModule } from '@ngrx/store';
 
 
 @NgModule({
@@ -24,9 +26,8 @@ import { tokenGetter } from './services/auth/auth.service';
         tokenGetter: tokenGetter,
         allowedDomains: [environment.apiUrl],
         disallowedRoutes: [],
-      }
-    })
-  ],
+      }}),
+    StoreModule.forRoot(authReducers)],
     providers:[
       {provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true}
     ]
