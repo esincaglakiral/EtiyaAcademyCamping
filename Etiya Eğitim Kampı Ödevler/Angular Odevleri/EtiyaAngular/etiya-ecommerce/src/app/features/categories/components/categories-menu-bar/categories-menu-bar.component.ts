@@ -1,7 +1,7 @@
-import {ChangeDetectionStrategy, Component, OnInit} from '@angular/core';
-import {MegaMenuItem} from 'primeng/api';
-import {Category} from '../../models/category';
-import {CategoriesService} from '../../services/categories/categories.service';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { MegaMenuItem } from 'primeng/api';
+import { Category } from '../../models/category';
+import { CategoriesService } from '../../services/categories/categories.service';
 
 @Component({
   selector: 'app-categories-menu-bar',
@@ -20,7 +20,7 @@ export class CategoriesMenuBarComponent implements OnInit {
   }
 
   getCategories() {
-    this.categoriesService.getList().subscribe(response => {
+    this.categoriesService.getList().subscribe((response) => {
       this.categories = response;
 
       this.configureItems();
@@ -28,14 +28,18 @@ export class CategoriesMenuBarComponent implements OnInit {
   }
 
   configureItems() {
-    this.items = this.categories.map(category => {
+    this.items = this.categories.map((category) => {
       // /categories/1 // Route params
       // /categories?category=1 // Query params
       return {
         label: category.name,
         routerLink: [''],
-        queryParams: {categoryId: category.id},
+        queryParams: { categoryId: category.id },
       };
+    });
+    this.items.unshift({
+      label: 'All',
+      routerLink: [''],
     });
   }
 }

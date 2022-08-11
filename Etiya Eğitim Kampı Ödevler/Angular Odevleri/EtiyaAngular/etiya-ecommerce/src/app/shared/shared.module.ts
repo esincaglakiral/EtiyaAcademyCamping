@@ -4,17 +4,22 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { MainLayoutComponent } from './layout/main-layout/main-layout.component';
 import { DashboardLayoutComponent } from './layout/dashboard-layout/dashboard-layout.component';
 
+import { SkeletonModule } from 'primeng/skeleton';
+import { CardSkeletonComponent } from './components/card-skeleton/card-skeleton.component';
+
 
 
 @NgModule({
   declarations: [
     NavbarComponent,
     MainLayoutComponent,
-    DashboardLayoutComponent
+    DashboardLayoutComponent,
+    CardSkeletonComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    SkeletonModule
   ],
-  exports:[NavbarComponent, MainLayoutComponent,DashboardLayoutComponent]
+  exports:[NavbarComponent, MainLayoutComponent,DashboardLayoutComponent, CardSkeletonComponent]
 })
 export class SharedModule { }

@@ -1,11 +1,23 @@
 <div class="row">
-  <ng-template let-product ngFor [ngForOf]="productList">
-    <div class="col-4 mt-2 mb-3">
-      <etiya-product-card [product]="product"></etiya-product-card>
-    </div>
-  </ng-template>
-</div>
+  <ng-container [ngSwitch]="fetchStatus">
+    <ng-template
+      *ngSwitchCase="'loaded'"
+      let-product
+      ngFor
+      [ngForOf]="productList | filterProduct: categoryId"
+    >
+      <div class="col-4 mt-2 mb-3">
+        <etiya-product-card [product]="product"></etiya-product-card>
+      </div>
+    </ng-template>
 
+    <div *ngSwitchCase="'pending'">
+      <div class="col-4">
+        <etiya-card-skeleton></etiya-card-skeleton>
+      </div>
+    </div>
+  </ng-container>
+</div>
 <!--
 <div *ngFor="let product of productList" class="col-4 mt-2 mb-3">
   <etiya-product-card [product]="product"></etiya-product-card>

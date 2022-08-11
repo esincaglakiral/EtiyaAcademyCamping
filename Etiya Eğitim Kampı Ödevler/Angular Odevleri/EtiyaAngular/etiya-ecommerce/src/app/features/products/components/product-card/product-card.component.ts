@@ -4,15 +4,11 @@ import { Product } from '../../models/product';
 @Component({
   selector: 'etiya-product-card',
   templateUrl: './product-card.component.html',
-  styleUrls: ['./product-card.component.css']
+  styleUrls: ['./product-card.component.css'],
 })
 export class ProductCardComponent implements OnInit {
-
   @Input() product!: Product;
+  constructor() {}
 
-  constructor() { }
-
-  ngOnInit(): void {
-  }
-
+  ngOnInit(): void {}
 }
