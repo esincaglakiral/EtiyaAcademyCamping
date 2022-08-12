@@ -1,1 +1,35 @@
-<p>services-list works!</p>
+<app-dashboard-layout>
+  <h3 class="mt-5">Service List</h3>
+  <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">ID</th>
+          <th scope="col">NAME</th>
+          <th scope="col" style="display:flex;justify-content:end; padding-right: 55px;">EDIT - DELETE</th>
+          <!-- <th scope="col" style="display:flex;justify-content:end; padding-right: 50px;">Delete</th> -->
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let service of services">
+          <th scope="row">{{ service.id }}</th>
+          <td>{{ service.name }}</td>
+          <td style="display:flex;justify-content:end; padding-right: 50px;">
+              <button style="margin-right: 25px" type="button" (click)="editServiceId(service)" class="btn btn-primary"><i class="bi bi-pencil-fill" style="color: black"></i></button>
+              <button type="button" (click)="cancelService(service.id)" class="btn btn-danger"><i class="bi bi-x-lg" style="color: black"></i></button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <nav aria-label="Page navigation example">
+      <ul class="pagination justify-content-end me-5">
+          <li class="page-item" *ngFor="let index of listOfAllServices ">
+            
+            <a class="page-link" (click)="fullList(index)">
+              
+              {{ index }}
+              <span aria-hidden="true">&raquo;</span>
+            </a>
+          </li>
+      </ul>
+    </nav>
+</app-dashboard-layout>

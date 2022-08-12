@@ -1,1 +1,10 @@
-<p>services-update works!</p>
+<div class="container w-75" *ngIf="serviceUpdate">
+    <form [formGroup]="serviceUpdate" (ngSubmit)="saveAll()" >
+      <div class="mb-3  m-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" formControlName="name" class="form-control" id="name" placeholder="
+        please enter the service name you want to add or update" />
+      </div>
+      <button type="submit"  class="btn btn-outline-primary m-3">Add Service</button>  
+    </form>
+</div>

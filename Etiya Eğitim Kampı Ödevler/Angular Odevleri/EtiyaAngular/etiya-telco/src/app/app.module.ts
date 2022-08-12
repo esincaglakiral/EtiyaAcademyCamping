@@ -6,6 +6,10 @@ import { FeaturesModule } from './features/features.module';
 import { SharedModule } from './shared/shared.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
+import { ToastrModule } from 'ngx-toastr';
+import { MessageService } from 'primeng/api';
+
+
 
 @NgModule({
   declarations: [
@@ -14,12 +18,15 @@ import { HttpClientModule } from '@angular/common/http';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FeaturesModule,
     SharedModule,
+    FeaturesModule,
+    HttpClientModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    ToastrModule.forRoot(),
+
+    
   ],
-  providers: [],
+  providers: [MessageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
