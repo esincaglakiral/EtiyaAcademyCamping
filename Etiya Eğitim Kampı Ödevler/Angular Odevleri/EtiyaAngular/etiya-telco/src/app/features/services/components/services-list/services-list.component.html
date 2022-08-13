@@ -1,35 +1,63 @@
 <app-dashboard-layout>
-  <h3 class="mt-5">Service List</h3>
-  <table class="table table-striped">
-      <thead>
-        <tr>
-          <th scope="col">ID</th>
-          <th scope="col">NAME</th>
-          <th scope="col" style="display:flex;justify-content:end; padding-right: 55px;">EDIT - DELETE</th>
-          <!-- <th scope="col" style="display:flex;justify-content:end; padding-right: 50px;">Delete</th> -->
-        </tr>
-      </thead>
-      <tbody>
-        <tr *ngFor="let service of services">
-          <th scope="row">{{ service.id }}</th>
-          <td>{{ service.name }}</td>
-          <td style="display:flex;justify-content:end; padding-right: 50px;">
-              <button style="margin-right: 25px" type="button" (click)="editServiceId(service)" class="btn btn-primary"><i class="bi bi-pencil-fill" style="color: black"></i></button>
-              <button type="button" (click)="cancelService(service.id)" class="btn btn-danger"><i class="bi bi-x-lg" style="color: black"></i></button>
-          </td>
-        </tr>
-      </tbody>
-    </table>
-    <nav aria-label="Page navigation example">
-      <ul class="pagination justify-content-end me-5">
-          <li class="page-item" *ngFor="let index of listOfAllServices ">
-            
-            <a class="page-link" (click)="fullList(index)">
-              
-              {{ index }}
-              <span aria-hidden="true">&raquo;</span>
-            </a>
-          </li>
-      </ul>
-    </nav>
+  <h3 class="mt-5" style="text-align: center; color: gray;">All Services</h3>
+  <div class="card" *ngIf="fetchStatus=='loaded'">    
+      <p-toolbar styleClass="p-mb-3">
+        
+          <ng-template pTemplate="left">
+              <button pButton pRipple label="New" icon="pi pi-plus" class="p-button-warning p-mr-2" routerLink="/service/addService"></button>
+          </ng-template>
+      </p-toolbar>
+      <p-table [value]="tempServices" [paginator]="true" [rows]="5" [showCurrentPageReport]="true" 
+          currentPageReportTemplate="Showing {first} to {last} of {totalRecords} entries" [rowsPerPageOptions]="[5,10,25,30]">
+          <ng-template pTemplate="header">
+              <tr>
+                  <th style=" color: gray;">ID</th>
+                  <th style=" color: gray;">NAME</th>
+                 <th style="display:flex;justify-content:end; padding-right: 70px;  word-spacing: 40px; color: gray;">UPDATE  DELETE</th> 
+                 
+                 
+              </tr>
+          </ng-template>
+          <ng-template pTemplate="body" let-service>
+              <tr>
+                  <td>{{service.id}}</td>
+                  <td>{{service.name}}</td>
+                  <td style="display:flex;justify-content:end; padding-right: 50px;">
+                      
+                      <button (click)="editServiceId(service)" style="margin-right: 20px" pButton pRipple type="button" icon="pi pi-pencil" class="p-button-rounded p-button-primary"></button>
+                      <p-confirmDialog header="Confirmation" icon="pi pi-exclamation-triangle"></p-confirmDialog>
+                      <button (click)="cancelService(service.id)" pButton pRipple type="button" label="Delete" class="p-button-rounded p-button-danger"></button>
+                  
+                    </td>
+              </tr>
+          </ng-template>
+      </p-table>
+  </div>
+
+   <div class="card" *ngIf="fetchStatus=='loading'">
+      <p-table [value]="emptyArray">
+          <ng-template pTemplate="header">
+  
+            <tr>
+              <th style=" color: gray;">ID</th>
+              <th style=" color: gray;">NAME</th>
+             <th style="display:flex;justify-content:end; padding-right: 80px;  word-spacing: 45px; color: gray;">UPDATE  DELETE</th> 
+          </tr>
+          </ng-template>
+          <ng-template pTemplate="body" let-i>
+            <tr>
+              <td><p-skeleton></p-skeleton></td>
+              <td><p-skeleton></p-skeleton></td>
+              <td><p-skeleton></p-skeleton></td>
+            </tr>
+          </ng-template>
+        </p-table>
+  </div>
+  <ng-container *ngIf="fetchStatus=='error'">
+      <div class="col-12">
+        <div class="alert alert-danger" role="alert">
+          Unable to fetch products from server.
+        </div>
+      </div>
+  </ng-container>
 </app-dashboard-layout>

@@ -15,12 +15,12 @@ export class ServicesUpdateComponent implements OnInit {
 
   serviceUpdate!: FormGroup;
   service!: Service;
+
   constructor(
     private formBuilder:FormBuilder,
     private activatedRoute:ActivatedRoute,
     private servicesService:ServiceService,
     private router:Router, 
-    private messageService:MessageService,
     private toastr: ToastrService
     ) { }
 
@@ -80,9 +80,9 @@ export class ServicesUpdateComponent implements OnInit {
       const service:Service = Object.assign({id:this.service.id}, this.serviceUpdate.value); 
       this.servicesService.updateService(service).subscribe(() => {
         setTimeout(() => {
+          this.toastr.success("Service succesfully update!","Update")
           this.router.navigateByUrl("/services");
-          this.messageService.add({severity:'success', summary:'Update', detail:'Service succesfully updated!'});
-        }, 1000);
+      }, 1000);
       });
   }
 

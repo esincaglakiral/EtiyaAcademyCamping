@@ -8,6 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { ToastrModule } from 'ngx-toastr';
 import { MessageService } from 'primeng/api';
+import { CoreModule } from './core/core.module';
 
 
 
@@ -23,6 +24,7 @@ import { MessageService } from 'primeng/api';
     HttpClientModule,
     BrowserAnimationsModule,
     ToastrModule.forRoot(),
+    CoreModule,
 
     
   ],
