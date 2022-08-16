@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import {MenuItem} from 'primeng/api';
+import { Observable } from 'rxjs';
+import { TokenUserModel } from 'src/app/core/auth/models/tokenUserModel';
+import { AuthService } from 'src/app/core/auth/services/auth.service';
 
 @Component({
   selector: 'app-navbar',
@@ -8,8 +11,11 @@ import {MenuItem} from 'primeng/api';
 })
 export class NavbarComponent implements OnInit {
   items!: MenuItem[];
-  constructor() { }
+  tokenUserModel$!: Observable<TokenUserModel | undefined>;
 
+  constructor(private authService:AuthService) {
+    this.tokenUserModel$ = this.authService.tokenUserModel$;
+   }
   ngOnInit(): void {
     this.getAllOfItems()
   }
@@ -88,6 +94,9 @@ export class NavbarComponent implements OnInit {
           ]
       }
   ];
+  }
+  logout(){
+    this.authService.logOut();
   }
 
 }

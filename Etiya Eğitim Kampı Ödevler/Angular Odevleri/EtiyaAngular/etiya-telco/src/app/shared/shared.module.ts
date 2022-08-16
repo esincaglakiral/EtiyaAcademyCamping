@@ -8,12 +8,13 @@ import { ButtonModule } from 'primeng/button';
 import { DashboardLayoutComponent } from './layout/dashboard-layout/dashboard-layout.component';
 import { MainLayoutComponent } from './layout/main-layout/main-layout.component';
 import { CoreModule } from '../core/core.module';
+import { BrowserModule } from '@angular/platform-browser';
 
 
 
 @NgModule({
   declarations: [FooterComponent,NavbarComponent, MainLayoutComponent, DashboardLayoutComponent],
-  imports: [CommonModule,MenubarModule,InputTextModule, ButtonModule, CoreModule],
+  imports: [CommonModule,MenubarModule,InputTextModule, BrowserModule,ButtonModule, CoreModule],
   exports: [NavbarComponent,FooterComponent, MainLayoutComponent, DashboardLayoutComponent]
 })
 export class SharedModule { }

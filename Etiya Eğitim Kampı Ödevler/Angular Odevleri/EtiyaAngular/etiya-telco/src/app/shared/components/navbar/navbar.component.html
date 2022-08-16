@@ -24,6 +24,22 @@
           <button class="btn btn-outline-light bi bi-search" type="submit"></button>
         </form>
       </div>
+      <div
+      *ngIf="!(tokenUserModel$ | async)"
+      class="d-flex justify-content-center order-0 order-lg-1"
+    >
+      <a class="btn mx-2 py-2 px-4 rounded-1" style="background-color: #f78200; color: white;">Sign Up</a>
+      <a class="btn btn-secondary mx-2 py-2 px-4 rounded-1 shadow" routerLink="login">Log in</a>
+    </div>
+  
+    <div *ngIf="tokenUserModel$ | async" ngbDropdown class="d-block">     
+      <button type="button" class="btn" style="background-color:#f78200; color: white;" id="dropdownBasic1" ngbDropdownToggle>
+        {{ (tokenUserModel$ | async)?.userName }}
+      </button>
+      <ul ngbDropdownMenu class="dropdown-menu" aria-labelledby="accountMenu">
+        <li ngbDropdownItem (click)="logout()">Log out</li>
+      </ul>
+    </div>
     </div>
 </nav>
 
