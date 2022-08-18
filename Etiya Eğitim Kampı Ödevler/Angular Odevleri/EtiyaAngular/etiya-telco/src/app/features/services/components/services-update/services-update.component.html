@@ -1,4 +1,8 @@
+<etiya-main-layout>
 <div class="container w-75" *ngIf="serviceUpdate">
+  <div class="m-3">
+    <h3 class="mt-5" style="text-align: center; color: gray;">{{header}}</h3>
+  </div>
     <form [formGroup]="serviceUpdate" (ngSubmit)="saveAll()" >
       <div class="mb-3  m-3">
         <label for="name" class="form-label">Name</label>
@@ -8,3 +12,4 @@
       <button type="submit"  class="btn btn-outline-primary bi bi-check m-3">Save</button>  
     </form>
 </div>
+</etiya-main-layout>

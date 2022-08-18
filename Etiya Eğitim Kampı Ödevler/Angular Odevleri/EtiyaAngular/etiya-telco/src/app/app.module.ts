@@ -5,11 +5,13 @@ import { AppComponent } from './app.component';
 import { FeaturesModule } from './features/features.module';
 import { SharedModule } from './shared/shared.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { ToastrModule } from 'ngx-toastr';
 import { MessageService } from 'primeng/api';
 import { CoreModule } from './core/core.module';
 import { StorageModule } from './core/storage/storage.module';
+import { AuthModule } from './core/auth/auth.module';
+import { LoadingInterceptor } from './core/interceptors/loading/loading.interceptor';
 
 
 
@@ -27,12 +29,14 @@ import { StorageModule } from './core/storage/storage.module';
     BrowserAnimationsModule,
     ToastrModule.forRoot(),
     CoreModule,
-    StorageModule,
+    // AuthModule,
+    // StorageModule,
     
 
     
   ],
-  providers: [MessageService],
+  providers: [MessageService,
+    {provide: HTTP_INTERCEPTORS, useClass: LoadingInterceptor, multi: true}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,45 +1,38 @@
 <nav class="navbar navbar-expand-lg bg-primary navbar-dark">
-    <div class="container-fluid">
-        <a style="font-weight: bold ;" class="navbar-brand" routerLink="">ETİYA TELCO</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" routerLink="" routerLinkActive="active">Home</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Services
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" routerLink="/services" routerLinkActive="active">All Of Services</a></li>
-              <li><a class="dropdown-item" routerLink="/service/addService" routerLinkActive="active">New Service</a></li>
-            </ul>
-          </li>
-        </ul>
-        <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-light bi bi-search" type="submit"></button>
-        </form>
-      </div>
-      <div
-      *ngIf="!(tokenUserModel$ | async)"
-      class="d-flex justify-content-center order-0 order-lg-1"
-    >
-      <a class="btn mx-2 py-2 px-4 rounded-1" style="background-color: #f78200; color: white;">Sign Up</a>
-      <a class="btn btn-secondary mx-2 py-2 px-4 rounded-1 shadow" routerLink="login">Log in</a>
-    </div>
-  
-    <div *ngIf="tokenUserModel$ | async" ngbDropdown class="d-block">     
-      <button type="button" class="btn" style="background-color:#f78200; color: white;" id="dropdownBasic1" ngbDropdownToggle>
-        {{ (tokenUserModel$ | async)?.userName }}
-      </button>
-      <ul ngbDropdownMenu class="dropdown-menu" aria-labelledby="accountMenu">
-        <li ngbDropdownItem (click)="logout()">Log out</li>
+  <div class="container-fluid">
+    <a style="font-weight: bold ;" class="navbar-brand" routerLink="">ETİYA TELCO</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" routerLink="" routerLinkActive="active">Home</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Services
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" routerLink="/services" routerLinkActive="active">All Of Services</a></li>
+            <li><a class="dropdown-item" routerLink="/service/addService" routerLinkActive="active">New Service</a></li>
+          </ul>
+        </li>
       </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-light" type="submit" routerLink="/login"
+          routerLinkActive="active" *ngIf="isLoggedIn()==false">Login</button>
+          <button class="btn btn-outline-danger" (click)="logOut()" type="submit"
+          routerLinkActive="active" *ngIf="isLoggedIn()==true">LogOut</button> 
+          
+         
+      </form>
     </div>
-    </div>
+  </div>
 </nav>
 
+<!-- <button class="btn btn-success" type="submit" routerLink="/login" *ngIf="isLoggedIn()==false"
+          routerLinkActive="active">Login</button>
+        <button class="btn btn-danger" type="submit" routerLink="/login" *ngIf="isLoggedIn()==true" (click)="logOut()"
+          routerLinkActive="active">LogOut</button>     -->

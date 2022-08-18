@@ -8,7 +8,7 @@ import { MessageService } from 'primeng/api';
 
 
 @Component({
-  selector: 'app-services-list',
+  selector: 'etiya-services-list',
   templateUrl: './services-list.component.html',
   styleUrls: ['./services-list.component.css'],
   styles: [`

@@ -6,17 +6,19 @@ import { LoadingService } from '../../services/loading/loading.service';
   templateUrl: './loading-page.component.html',
   styleUrls: ['./loading-page.component.css']
 })
-export class LoadingPageComponent implements OnInit {
-  isLoading: boolean = false;
-  constructor(private loadingService: LoadingService) { }
+export class LoadingPageComponent {
 
-  ngOnInit(): void {
-    this.pageToLoadingStatus();
-  }
-  pageToLoadingStatus() {
-    this.loadingService.isLoading.subscribe((value) => {
-      this.isLoading = value;
-    });
-  }
+  isLoading: boolean = true;
+
+  constructor(private loadingService: LoadingService) {
+
+    this.loadingService.showLoadingOverlay.subscribe(this.showLoadingOverlay.bind(this));
+
+   }
+
+   showLoadingOverlay = (value: boolean): void => {
+    this.isLoading = value;
+   }
+   
 
 }

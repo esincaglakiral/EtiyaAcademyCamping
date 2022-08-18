@@ -9,12 +9,37 @@ import { DashboardLayoutComponent } from './layout/dashboard-layout/dashboard-la
 import { MainLayoutComponent } from './layout/main-layout/main-layout.component';
 import { CoreModule } from '../core/core.module';
 import { BrowserModule } from '@angular/platform-browser';
+import { RouterModule } from '@angular/router';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+
 
 
 
 @NgModule({
-  declarations: [FooterComponent,NavbarComponent, MainLayoutComponent, DashboardLayoutComponent],
-  imports: [CommonModule,MenubarModule,InputTextModule, BrowserModule,ButtonModule, CoreModule],
-  exports: [NavbarComponent,FooterComponent, MainLayoutComponent, DashboardLayoutComponent]
+  declarations: [
+    NavbarComponent,
+    FooterComponent, 
+    DashboardLayoutComponent, 
+    MainLayoutComponent, 
+  
+    ],
+
+  imports: [
+    CommonModule,
+    MenubarModule,
+    InputTextModule, 
+    BrowserModule,  
+    BrowserAnimationsModule,
+    ButtonModule, 
+    // CoreModule, 
+    // RouterModule
+  ],
+  
+  exports: [
+    NavbarComponent,
+    FooterComponent, 
+    DashboardLayoutComponent, 
+    MainLayoutComponent, 
+  ]
 })
 export class SharedModule { }

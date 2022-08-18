@@ -7,7 +7,7 @@ import { MessageService } from 'primeng/api';
 import { ToastrService } from 'ngx-toastr';
 
 @Component({
-  selector: 'app-services-update',
+  selector: 'etiya-services-update',
   templateUrl: './services-update.component.html',
   styleUrls: ['./services-update.component.css']
 })
@@ -15,6 +15,7 @@ export class ServicesUpdateComponent implements OnInit {
 
   serviceUpdate!: FormGroup;
   service!: Service;
+  header:string = 'Hello';
 
   constructor(
     private formBuilder:FormBuilder,
@@ -25,13 +26,17 @@ export class ServicesUpdateComponent implements OnInit {
     ) { }
 
   ngOnInit(): void {
-    this.getProductsIdRoute();
+    this.getServicesIdRoute();
   }
 
-  getProductsIdRoute(){
+  getServicesIdRoute(){
     this.activatedRoute.params.subscribe((param) => {
-      if (param['id']) this.getServicesById(param['id']);
+      if (param['id']) {
+        this.header = 'Update Service';
+        this.getServicesById(param['id']);
+      }
       else{
+        this.header = 'Add Service';
         this.newCreateServiceForm();
       };
     });
@@ -54,11 +59,11 @@ export class ServicesUpdateComponent implements OnInit {
   saveAll(){
     if(this.service) this.updateServices();
     else{
-      this.addNewService();
+      this.addService();
     }
   }
 
-  addNewService() {
+  addService() {
     if(!this.serviceUpdate.valid){
       this.toastr.warning("please fill in the required fields!", "Empty Fields")
       return;

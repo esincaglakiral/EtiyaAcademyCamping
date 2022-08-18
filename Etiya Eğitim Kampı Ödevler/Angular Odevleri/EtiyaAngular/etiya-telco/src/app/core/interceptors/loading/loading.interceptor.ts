@@ -11,23 +11,25 @@ import { LoadingService } from '../../services/loading/loading.service';
 
 @Injectable()
 export class LoadingInterceptor implements HttpInterceptor {
-  constructor(private loadService: LoadingService) {}
+  
+  constructor(private loadingService: LoadingService) {}
 
-  intercept(
-    request: HttpRequest<unknown>,
-    next: HttpHandler
-  ): Observable<HttpEvent<unknown>> {
-    if (request.method != 'GET'){
-      
-      this.loadService.setIsLoading(true);
-    } 
-
-    return next.handle(request).pipe(
-      finalize(() => {
-        setTimeout(() => {
-          this.loadService.setIsLoading(false);
-        }, 3500);
-      })
-    );
+  intercept(request: HttpRequest<unknown>, next: HttpHandler): Observable<HttpEvent<unknown>> {
+    if((request.method == "POST" || request.method == "PUT" || request.method == "DELETE")){
+      this.loadingService.handleRequest('plus');
+    return next
+      .handle(request)
+      .pipe(
+        finalize(this.finalize.bind(this))
+      );
+    }
+    return next.handle(request)
+    
   }
+
+  finalize = (): void =>{
+    setTimeout(() => {
+    this.loadingService.handleRequest()
+  }, 1000)
+  } 
 }
