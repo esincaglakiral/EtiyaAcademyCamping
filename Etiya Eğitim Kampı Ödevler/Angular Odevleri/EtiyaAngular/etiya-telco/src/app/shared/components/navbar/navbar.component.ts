@@ -11,8 +11,12 @@ import { AuthService } from 'src/app/core/auth/services/auth.service';
 export class NavbarComponent implements OnInit {
 
   items!: MenuItem[];
+
+//   tokenUserModel$! : Observable<TokenUserModel | undefined>
  
-  constructor(private authService:AuthService) {}
+  constructor(private authService:AuthService) {
+    // this.tokenUserModel$ = this.authService.tokenUserModel$
+  }
 
 
   ngOnInit(): void {
