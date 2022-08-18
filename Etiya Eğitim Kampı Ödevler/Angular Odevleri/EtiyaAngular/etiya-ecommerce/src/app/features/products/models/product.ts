@@ -12,3 +12,4 @@ export interface Product {
 	discontinued: boolean;
 	name: string;
   }
+  

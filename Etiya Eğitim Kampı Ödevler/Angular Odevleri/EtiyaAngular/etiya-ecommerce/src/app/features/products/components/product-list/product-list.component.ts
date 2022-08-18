@@ -28,7 +28,7 @@ export class ProductListComponent implements OnInit, OnChanges {
   ngOnInit(): void {
     setTimeout(() => {
       this.getAllProducts();
-    }, 1500);
+    }, 2000);
   }
 
   getAllProductsByCategoryId() {
@@ -47,7 +47,7 @@ export class ProductListComponent implements OnInit, OnChanges {
           this.fetchStatus = 'error';
         }
       );
-    }, 1500);
+    }, 2000);
   }
 
   getAllProducts() {

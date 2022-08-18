@@ -1,0 +1,43 @@
+<div class="container">
+  <div class="surface-card p-4 shadow-2 border-round w-full lg:w-6">
+    <div class="d-flex justify-content-center align-items-center">
+      <!-- util class -->
+      <form [formGroup]="loginForm">
+        <div class="mb-3">
+          <label for="email1" class="block text-900 font-medium mb-2"
+            >Username</label
+          >
+          <input
+            formControlName="userName"
+            id="email1"
+            type="text"
+            pInputText
+            class="w-full mb-3 d-block"
+          />
+        </div>
+
+        <div>
+          <label for="password1" class="block text-900 font-medium mb-2"
+            >Password</label
+          >
+          <input
+            formControlName="password"
+            id="password1"
+            type="password"
+            pInputText
+            class="w-full mb-3 d-block"
+          />
+        </div>
+
+        <button
+          (click)="login()"
+          pButton
+          pRipple
+          label="Sign In"
+          icon="pi pi-user"
+          class="w-full d-block"
+        ></button>
+      </form>
+    </div>
+  </div>
+</div>

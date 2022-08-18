@@ -4,20 +4,29 @@
       *ngSwitchCase="'loaded'"
       let-product
       ngFor
-      [ngForOf]="productList | filterProduct: categoryId"
+      [ngForOf]="productList"
     >
       <div class="col-4 mt-2 mb-3">
         <etiya-product-card [product]="product"></etiya-product-card>
       </div>
     </ng-template>
 
-    <div *ngSwitchCase="'pending'">
-      <div class="col-4">
-        <etiya-card-skeleton></etiya-card-skeleton>
+    <ng-container *ngSwitchCase="'pending'">
+      <div class="col-4" *ngFor="let i of pageSize | createFakeArray">
+        <etiya-card-skeleton class="mt-3 mb-2"></etiya-card-skeleton>
       </div>
-    </div>
+    </ng-container>
+
+    <ng-container *ngSwitchCase="'error'">
+      <div class="col-12">
+        <div class="alert alert-danger" role="alert">
+          Unable to fetch products from server.
+        </div>
+      </div>
+    </ng-container>
   </ng-container>
 </div>
+
 <!--
 <div *ngFor="let product of productList" class="col-4 mt-2 mb-3">
   <etiya-product-card [product]="product"></etiya-product-card>

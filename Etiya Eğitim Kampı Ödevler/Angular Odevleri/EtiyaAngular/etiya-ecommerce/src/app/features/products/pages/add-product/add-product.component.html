@@ -1,0 +1,91 @@
+<!-- <app-main-layout> -->
+  <div class="my-5 mx-auto w-100">
+    <h3>Add New Product</h3>
+    <div class="grid p-fluid">
+      <form [formGroup]="addProductForm">
+        <div class="col-4 md:col-4">
+          <div class="p-inputgroup">
+            <span class="p-float-label">
+              <input
+                formControlName="name"
+                id="float-input"
+                type="text"
+                pInputText
+              />
+              <label for="float-input">Name</label>
+            </span>
+          </div>
+        </div>
+        <div class="col-4 my-2 md:col-4">
+          <div class="p-inputgroup">
+            <span class="p-float-label">
+              <input
+                formControlName="reOrderLevel"
+                id="float-input"
+                type="text"
+                pInputText
+              />
+              <label for="float-input">Reorder Level</label>
+            </span>
+          </div>
+        </div>
+        <div class="col-4 my-2 md:col-4">
+          <div class="p-inputgroup">
+            <span class="p-float-label">
+              <input
+                formControlName="unitsInOrder"
+                id="float-input"
+                type="text"
+                pInputText
+              />
+              <label for="float-input">Units in Order</label>
+            </span>
+          </div>
+        </div>
+        <div class="col-4 my-2 md:col-4">
+          <div class="p-inputgroup">
+            <span class="p-float-label">
+              <input
+                formControlName="unitsInStock"
+                id="float-input"
+                type="text"
+                pInputText
+              />
+              <label for="float-input">Units in Stock</label>
+            </span>
+          </div>
+        </div>
+        <div class="col-4 my-2 md:col-4">
+          <div class="p-inputgroup">
+            <span class="p-float-label">
+              <input
+                formControlName="unitPrice"
+                id="float-input"
+                type="text"
+                pInputText
+              />
+              <label for="float-input">Unit Price</label>
+            </span>
+          </div>
+        </div>
+        <div class="col-4 my-2 md:col-4">
+          <div class="p-inputgroup">
+            <span class="p-float-label">
+              <input
+                formControlName="quantityPerUnit"
+                id="float-input"
+                type="text"
+                pInputText
+              />
+              <label for="float-input">Quantity Per Unit</label>
+            </span>
+          </div>
+        </div>
+        <div class="col-4 my-2 md:col-4">
+          <p-button (onClick)="addProduct()" label="Kaydet"></p-button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- </app-main-layout> -->
+  
