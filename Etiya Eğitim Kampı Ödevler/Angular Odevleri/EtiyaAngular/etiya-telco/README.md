@@ -1,5 +1,20 @@
 # EtiyaTelco
 
+## Built With
+
+[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)](https://angular.io/)
+[![NgRx](https://img.shields.io/badge/NgRx-DD0031?style=for-the-badge&logo=NPM&logoColor=white)](https://ngrx.io/)
+[![Css](https://img.shields.io/badge/Css-CC6699?style=for-the-badge&logo=css&logoColor=white)](https://www.w3schools.com/css/)
+[![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)](https://getbootstrap.com/docs/)
+[![PrimeNg](https://img.shields.io/badge/PrimeNg-563D7C?style=for-the-badge&logo=primeng&logoColor=white)](https://www.primefaces.org/primeng/)
+
+
+
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.6.
+
+
 ### Homepage
 
 ![image](https://user-images.githubusercontent.com/68962573/185269375-d61e9381-a955-4025-8fa3-c4b00bd52122.png)
