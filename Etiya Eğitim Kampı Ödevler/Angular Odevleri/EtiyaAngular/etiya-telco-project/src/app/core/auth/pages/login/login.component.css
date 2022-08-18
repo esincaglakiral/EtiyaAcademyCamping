@@ -1,0 +1,22 @@
+
+@import "primeflex/primeflex.css";
+
+.mc{
+    background-color: #55286F !important;
+}
+
+.text-900{
+    color: #f5821f !important;
+}
+
+.text-600{
+    color: #f5821f !important;
+}
+
+button{
+    color: #f5821f !important;
+}
+
+.text-500{
+    color: white !important;
+}
