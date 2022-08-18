@@ -1,13 +1,20 @@
 # EtiyaTelco
 
-## Built With
+## Project Programming Languages
+<br>
+<p align="left">
+<a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/typescript-colored.svg" width="36" height="36" alt="TypeScript" /></a>
+<a href="https://developer.mozilla.org/en-US/docs/Glossary/HTML5" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/html5-colored.svg" width="36" height="36" alt="HTML5" /></a>
+<a href="https://angular.io/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/angularjs-colored.svg" width="36" height="36" alt="Angular" /></a>
+<a href="https://www.w3.org/TR/CSS/#css" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/css3-colored.svg" width="36" height="36" alt="CSS3" /></a>
+<a href="https://getbootstrap.com/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/bootstrap-colored.svg" width="36" height="36" alt="Bootstrap" /></a>
+<a href="https://nodejs.org/en/" target="_blank" rel="noreferrer"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/skills/nodejs-colored.svg" width="36" height="36" alt="NodeJS" /></a>
+<a href="https://www.primefaces.org/primeng/" target="_blank" rel="noreferrer"><img src="https://www.primefaces.org/primeng/assets/showcase/images/primeng-logo-dark.svg" width="80" height="36" alt="PrimeNG" /></a>
+<a href="https://ngrx.io/" target="_blank" rel="noreferrer"><img src="https://ngrx.io/assets/images/badge.svg" width="36" height="36" alt="NGRX" /></a>
+<a href="https://www.npmjs.com/" target="_blank" rel="noreferrer"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/db/Npm-logo.svg/182px-Npm-logo.svg.png" width="65" height="36" alt="npm" /></a>
+</p>
 
-[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Angular](https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white)](https://angular.io/)
-[![NgRx](https://img.shields.io/badge/NgRx-DD0031?style=for-the-badge&logo=NPM&logoColor=white)](https://ngrx.io/)
-[![Css](https://img.shields.io/badge/Css-CC6699?style=for-the-badge&logo=css&logoColor=white)](https://www.w3schools.com/css/)
-[![Bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)](https://getbootstrap.com/docs/)
-[![PrimeNg](https://img.shields.io/badge/PrimeNg-563D7C?style=for-the-badge&logo=primeng&logoColor=white)](https://www.primefaces.org/primeng/)
+<br>
 
 
 
