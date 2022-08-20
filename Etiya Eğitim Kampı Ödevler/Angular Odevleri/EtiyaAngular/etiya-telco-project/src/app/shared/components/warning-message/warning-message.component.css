@@ -1,0 +1,27 @@
+.e-warn-container {
+    margin-top: 15px;
+    margin-left: 12px;
+    display: flex;
+    align-items: center;
+    width: 40%;
+    height: 59px;
+
+    background: #83a6d1;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 3px 0 0 3px;
+}
+.e-warn-img {
+    width: 91px;
+    height: 79px;
+}
+.e-warn-text {
+    height: 45px;    
+    font-family: 'Anybody';
+    font-style: bold;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 23px;
+    letter-spacing: 0.02em;    
+    color: #000000;
+    margin: 0;
+}

@@ -1,16 +1,6 @@
-@import '../styles.css';
-
-
-/* User-info çağrıldığı yerdeki css */
-/* .app-user-info{
-    width: 332px;
-} */
-
-
-
-/* login input ve butonu */
-
-/* .e-input {
+@import '../../../../styles.css';
+    
+.e-input {
     width: 100%;;
     height: 50px;
     background: #FFFFFF;
@@ -41,6 +31,7 @@
     font-weight: 700;
     font-size: 20px;
     line-height: 21px;
+    /* identical to box height */
 
     letter-spacing: 0.17em;
 
@@ -52,7 +43,7 @@
     width: 100%;
     height: 50px;
     background-color: #F58220;
-    
+
     font-weight: 700;
     font-size: 22px;
     line-height: 23px;
@@ -104,17 +95,32 @@
 .e-form-container {
     width: 40%;
     margin-left: 30px;
-} */
-
-
-
-
-/* .mc1{
-    color: white !important;
 }
 
-overlay loading gerekli css 
+.table.e-table .table-title{
+    background-color: #191847 ;
+}
 
-.mc{
-    color: #F58220 !important;
-} */
+.table.e-table .table-body{
+    background-color: #2A5183;
+}
+
+.table.e-table{
+    color: #FFFFFF;
+    border: 2px solid #F58220!important;
+    box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-align: center;
+}
+.table.e-table .table-title th,
+.table.e-table tr td {
+    height: 59px;
+    border-left: 2px solid black;
+}
+.table.e-table .table-title th:first-child,
+.table.e-table .table-body tr th{
+   border-left: 2px solid #F58220;
+}
+
+.table.e-table tr th {
+    border-left: 2px solid #F58220;
+}
