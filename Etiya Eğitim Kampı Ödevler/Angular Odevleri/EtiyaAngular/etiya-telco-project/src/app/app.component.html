@@ -1,26 +1,25 @@
-<!-- <app-confirm></app-confirm>
+<router-outlet></router-outlet>
 
-<router-outlet></router-outlet> -->
+<!-- Button ve dropdown için html -->
+<!-- <app-add-new-item-button [btnAdressTitle]="'Add New Adress'"></app-add-new-item-button> -->
 
-<!-- Warning Message -->
+<!-- info title çağrılcak yerde yazılacak kod -->
+<!-- <app-info-title [infoTitle]="'Demographic Info'"></app-info-title> -->
+
+<!-- main layout çağırılacağı yerde yazılacak kod -->
+<!-- <app-main-layout [layoutTitle]="'CREATE CUSTOMER'"></app-main-layout> -->
+
+<!-- warning message çağıralacak yerde yazılacak kod -->
 <!-- <app-warning-message warnText="Wrong Username or Password. Please try again"></app-warning-message>
 <app-warning-message warnText="The password was entered incorrectly 3 times."></app-warning-message> -->
 
+<!-- confirm component çağırmak için çağırcağımız yerde yazılacak kod -->
+<!-- <app-confirm></app-confirm> -->
 
-
-
-
+<!-- container html içerisine not found çağırmak için yazılacak kod -->
 <!-- <app-container>
     <app-not-found [btnText]="'CREATE CUSTOMER'"></app-not-found>
-</app-container>
-
-
-
-<router-outlet></router-outlet> -->
-
-
-
-
+</app-container> -->
 
 <!-- not found çağrılcağı yerde yazılması gereken kod -->
 <!-- <app-not-found [btnText]="'CREATE CUSTOMER'"></app-not-found> -->
@@ -29,26 +28,19 @@
 <!-- table info çağrıldığı yerdeki html -->
 <!-- <app-table-info></app-table-info> -->
 
-
-
 <!-- User info çağrıldığı yerdeki html kodu -->
  <!-- <div class="app-user-info">
     <app-user-info></app-user-info>
 </div> -->
 
-
 <!-- Navbar için çağrıldığı yerdeki html -->
 <!-- <app-navbar></app-navbar> -->
-
 
 <!-- Settings menü için çağırılması istenen yerdeki html -->
 <!-- <app-settings-menu></app-settings-menu> -->
 
-
 <!-- side filter search için html -->
 <!-- <app-side-filter [filterTitle]="'SEARCH CUSTOMER'"></app-side-filter> -->
-
-
 
 <!-- 
 login inputları ve butonu -->
@@ -59,14 +51,14 @@ login inputları ve butonu -->
     <p class="e-form-text">Please your enter Username and password to login</p>
     <form>
         <div class="form-group">
-            <input type="text" class="e-input" placeholder="Username" />
+            <input type="text" class="e-input-white" placeholder="Username" />
         </div>
         <div class="form-group">
-            <input type="password" class="e-input" placeholder="Password" />
+            <input type="password" class="e-input-white" placeholder="Password" />
         </div>
         <div class="form-check d-flex justify-content-between mb-4">    
             <div>
-                <input type="checkbox" class="form-check-input e-check" id="exampleCheck1" />
+                <input type="checkbox" class="form-check-input e-check-box" id="exampleCheck1" />
                 <label class="form-check-label e-check-label"  for="exampleCheck1">Remember Me</label>   
             </div>   
             <div>
@@ -74,31 +66,10 @@ login inputları ve butonu -->
             </div>      
                          
         </div>
-        <button type="submit" class="btn btn-primary e-btn">LOG IN</button>
+        <button type="submit" class="btn btn-primary e-btn-login">LOG IN</button>
     </form>
     
 </div> -->
-
-
-
-
-
-<!-- <app-navbar></app-navbar> -->
-<!-- <app-side-filter [filterTitle]="'SEARCH CUSTOMER'"></app-side-filter> -->
-
-<!-- <app-info-title [infoTitle]="'Demographic Info'"></app-info-title> -->
-
-
-
-<app-main-layout [layoutTitle]="'CREATE CUSTOMER'"></app-main-layout>
-
-
-
-<router-outlet></router-outlet>
-
-
-
-
 
 
 

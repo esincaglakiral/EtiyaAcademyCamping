@@ -7,7 +7,6 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class WarningMessageComponent implements OnInit {
   @Input() warnText!:string;
-
   constructor() { }
 
   ngOnInit(): void {

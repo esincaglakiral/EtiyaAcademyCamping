@@ -6,7 +6,6 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./side-filter.component.css']
 })
 export class SideFilterComponent implements OnInit {
-
   @Input() filterTitle!:string
   constructor() { }
 

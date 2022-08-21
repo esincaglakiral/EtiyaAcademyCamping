@@ -1,6 +1,6 @@
 @import '../../../../styles.css';
 
-.e-input {
+.e-input-dark {
     box-sizing: border-box;
 
 
@@ -25,6 +25,16 @@
     font-size: 20px;
     line-height: 21px;
     color: #FFFFFF;
+}
+
+.verticalLine {
+    border-left: thick solid #F58220;
+    width: 3px;
+    height: 80px;
+    top: 0;
+    left: 50%;
+    margin-left: 5px;
+
 }
 
 .e-search-container {
@@ -78,6 +88,33 @@
     color: #FFFFFF;
 }
 
+.e-search-title {
+    width: 284px;
+    height: 33px;
+
+    font-family: 'Anybody';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 33px;
+
+    color: #FFFFFF;
+}
+
+.e-search-title-mini {
+    width: 153px;
+    height: 25px;
+
+    margin-left: 10px;
+
+    font-family: 'Anybody';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 25px;
+    color: #FFFFFF;
+}
+
 .e-img-search {
     width: 36px;
 }
@@ -95,25 +132,13 @@
 }
 
 .e-search-title-mini {
-    font-family: 'Anybody';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 25px;
     color: #FFFFFF;
 }
 
 .e-search-title {
-    font-family: 'Anybody';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 33px;
-
     color: #FFFFFF;
     margin-bottom: 50px;
 }
-
 
 .mini-horizontalLine {
 
@@ -184,7 +209,7 @@
     height: 70px;
     left: 295px;
     top: 8px;
-    
+
     background: #F58220;
     border-radius: 2px;
 }

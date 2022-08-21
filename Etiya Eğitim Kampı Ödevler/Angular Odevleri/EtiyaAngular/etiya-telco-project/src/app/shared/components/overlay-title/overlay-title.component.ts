@@ -6,7 +6,6 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./overlay-title.component.css']
 })
 export class OverlayTitleComponent implements OnInit {
-
   @Input() title!:string;
   constructor() { }
 

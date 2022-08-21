@@ -1,3 +1,33 @@
+.e-title-container {
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+
+
+.e-title {
+    display: block;
+    position: relative;
+    font-family: 'Anybody', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 41px;
+    letter-spacing: 0.38em;
+}
+
+
+.e-title::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    margin-left: 10px;
+    background-color: #F58220;
+    border: 1px solid #F58220;
+}
+
+
 .e-info-title {
 
     width: 273px;

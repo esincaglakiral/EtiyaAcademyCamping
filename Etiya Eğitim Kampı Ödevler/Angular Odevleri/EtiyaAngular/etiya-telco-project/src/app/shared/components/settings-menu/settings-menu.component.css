@@ -22,13 +22,13 @@
     justify-content: center;
     width: 100px;
     height: 100px;
-    
+
 }
 
 .e-settings-items img {
     width: 70px;
     height: 70px;
-    
+
 }
 
 .e-settings-items.active,
@@ -46,5 +46,5 @@
     border: 1px solid #F58220;
     border-radius: 0px;
     float: right;
-    
-}
+
+} 
