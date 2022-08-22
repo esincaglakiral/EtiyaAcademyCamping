@@ -1,6 +1,6 @@
 @import '../../../../styles.css';
 
-.e-container-nf{    
+.e-container-nf{
     margin: 50px;
     display: flex;
     flex-direction: column;
@@ -9,13 +9,11 @@
 .e-label-nf {
     width: 450px;
     height: 53px;
-
     font-family: 'Anybody';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
     line-height: 25px;
-
     color: #FFFFFF;
 }
 
@@ -34,7 +32,7 @@
     color: #FFFFFF;
 }
 
-.e-btn-create-logo {
+.e-btn-logo {
     margin-top: -10px;
     width: 50px;
     color: #FFFFFF;
@@ -43,4 +41,3 @@
 .e-img-nf{
     width: 90px;
 }
-

@@ -1,30 +1,14 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { MessageService, PrimeNGConfig } from 'primeng/api';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   templateUrl: './showcase.component.html',
   styleUrls: ['./showcase.component.css']
 })
 export class ShowcaseComponent implements OnInit {
-  @Input() customSeverity!:string;
-  @Input() customSummary!:string;
-  @Input() customDetail!:string;
 
-  constructor(private messageService: MessageService) {}
+  constructor() { }
 
-  ngOnInit(): void {}
-
-  showConfirm() {
-      this.messageService.clear()
-      this.messageService.add({ key: 'c', sticky: true, severity: 'warn', detail: 'Your changes could not be saved. Are you sure?' });
-      
+  ngOnInit(): void {
   }
-  onConfirm() {
-      this.messageService.clear('c')
-  }
-  onReject() {
-      this.messageService.clear('c')
-  }
-
 
 }

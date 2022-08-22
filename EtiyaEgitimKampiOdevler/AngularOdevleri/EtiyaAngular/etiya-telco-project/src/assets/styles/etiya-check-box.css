@@ -1,12 +1,12 @@
 ::ng-deep .e-check-box {
-    box-sizing: border-box;
+  box-sizing: border-box;
 
-    width: 21px;
-    height: 19px;
-    left: 843px;
-    top: 631px;
+  width: 21px;
+  height: 19px;
+  left: 843px;
+  top: 631px;
 
-    background: #061F3E!important;
-    border: 1px solid #F58220!important;
-    border-radius: 3px;
+  background: #061F3E!important;
+  border: 1px solid #F58220!important;
+  border-radius: 3px;
 }

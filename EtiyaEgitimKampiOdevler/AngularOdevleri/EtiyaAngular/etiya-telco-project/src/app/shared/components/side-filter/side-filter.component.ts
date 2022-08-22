@@ -7,6 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class SideFilterComponent implements OnInit {
   @Input() filterTitle!:string
+
   constructor() { }
 
   ngOnInit(): void {

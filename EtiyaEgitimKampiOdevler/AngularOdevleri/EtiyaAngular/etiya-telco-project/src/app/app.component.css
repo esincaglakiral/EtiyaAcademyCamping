@@ -1,68 +1,68 @@
 @import '../styles.css';
 
+
+
 .e-frame-container {
-    position: relative;
+  position: relative;
 }
 
 .e-form-frame {
-    position: absolute;
-    box-sizing: border-box;
-    width: 100%;
-    height: 258px;
-    background: rgba(13, 43, 80, 0.7);
-    border: 3px solid #F52020;
-    border-radius: 22px;
+  position: absolute;
+  box-sizing: border-box;
+  width: 100%;
+  height: 258px;
+  background: rgba(13, 43, 80, 0.7);
+  border: 3px solid #F52020;
+  border-radius: 22px;
 }
 
 .e-frame {
-    position: absolute;
-    box-sizing: border-box;
-    width: 90%;
-    height: 258px;
+  position: absolute;
+  box-sizing: border-box;
+  width: 90%;
+  height: 258px;
 
-    background: rgba(13, 43, 80, 0.7);
-    border: 3px solid #F58220;
-    border-radius: 22px;
+  background: rgba(13, 43, 80, 0.7);
+  border: 3px solid #F58220;
+  border-radius: 22px;
 }
 
 .e-frame-label {
-    margin-top: 25px;
-    width: 100%;
-    height: 31px;
+  margin-top: 25px;
+  width: 100%;
+  height: 31px;
 
-    font-family: 'Anybody';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 31px;
-    color: #FFFFFF;
+  font-family: 'Anybody';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 31px;
+  color: #FFFFFF;
 }
 
 .e-btn-edit {
-    box-sizing: border-box;
-    width: 42px;
-    height: 47px;
-    background: url("../assets/img/edit-btn-img.png");
-    background-size: cover;
-    background-position: center;
-    border: 1px solid #F58220;
+  box-sizing: border-box;
+  width: 42px;
+  height: 47px;
+  background: url("../assets/img/edit-btn-img.png");
+  background-size: cover;
+  background-position: center;
+  border: 1px solid #F58220;
 
-    margin-right: 15px;
-    float: right;
+  margin-right: 15px;
+  float: right;
 }
 
 .e-btn-remove {
-    box-sizing: border-box;
-    width: 41px;
-    height: 47px;
-    background: url("../assets/img/remove-btn-img.png");
-    background-size: cover;
-    background-position: center;
-    border: 1px solid #F58220;
-    float: right;
+  box-sizing: border-box;
+  width: 41px;
+  height: 47px;
+  background: url("../assets/img/remove-btn-img.png");
+  background-size: cover;
+  background-position: center;
+  border: 1px solid #F58220;
+  float: right;
 }
-
-
 
 
 
@@ -70,14 +70,16 @@
 
 /* User-info çağrıldığı yerdeki css */
 /* .app-user-info{
-    width: 332px;
+  width: 332px;
 } */
 
 
 
 /* login input ve butonu */
+/* login input ve butonu--form */
+/* @import '../styles.css';
 
-/* .e-input-white {
+.e-input {
     width: 100%;;
     height: 50px;
     background: #FFFFFF;
@@ -102,7 +104,7 @@
     opacity: 0.6;
 }
 
-.e-input-white::placeholder {
+.e-input::placeholder {
     font-family: 'Anybody';
     font-style: normal;
     font-weight: 700;
@@ -119,7 +121,7 @@
     width: 100%;
     height: 50px;
     background-color: #F58220;
-    
+
     font-weight: 700;
     font-size: 22px;
     line-height: 23px;
@@ -133,7 +135,7 @@
     border-radius: 17px;
 }
 
-.e-check-box {
+.e-check {
     box-sizing: border-box;
 
 
@@ -171,17 +173,25 @@
 .e-form-container {
     width: 40%;
     margin-left: 30px;
-} */
+}
+ */
+
+
+
+
+
+
+
 
 
 
 
 /* .mc1{
-    color: white !important;
+  color: black !important
 }
 
-overlay loading gerekli css 
+overlay loading gerekli css
 
 .mc{
-    color: #F58220 !important;
+  color: #F58220 !important
 } */
