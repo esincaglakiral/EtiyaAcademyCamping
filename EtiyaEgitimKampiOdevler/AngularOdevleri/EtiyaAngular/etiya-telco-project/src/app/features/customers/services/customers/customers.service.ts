@@ -14,4 +14,9 @@ export class CustomersService {
   getList(): Observable<Customer[]>{
     return this.httpClient.get<Customer[]>(this.apiControllerUrl);
   }
+
+  // getAll(page: number = 0, pageSize: number = 10): Observable<ListResponseModel<Customer>> {
+  //   return this.httpClient.get<ListResponseModel<Customer>>(`${this.apiControllerUrl}`, {params: { page, pageSize }
+  //   });
+  // }
 }

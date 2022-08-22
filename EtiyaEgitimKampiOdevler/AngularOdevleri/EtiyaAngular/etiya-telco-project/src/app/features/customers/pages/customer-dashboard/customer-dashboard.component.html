@@ -4,7 +4,7 @@
   <div class="app-user-info col-3 ml-3">
     <app-user-info></app-user-info>
 
-    <app-side-filter [filterTitle]="'SEARCH CUSTOMER'"></app-side-filter>
+    <app-side-filter [filterTitle]="'SEARCH CUSTOMER'" [data]="customerList" (data1)="search($event)"></app-side-filter>
   </div>
 
   <div class="col-9 pt-0">
@@ -24,7 +24,7 @@
             </tr>
           </thead>
           <tbody class="table-body">
-            <tr *ngFor="let customer of customerList">
+            <tr *ngFor="let customer of customerList1">
               <th>{{customer.id}}</th>
               <td>{{customer.firstName}}</td>
               <td>{{customer.middleName}}</td>

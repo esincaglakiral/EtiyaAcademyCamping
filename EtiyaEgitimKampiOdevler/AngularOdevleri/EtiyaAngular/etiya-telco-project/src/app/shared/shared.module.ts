@@ -1,3 +1,4 @@
+import { ReactiveFormsModule, FormGroup } from '@angular/forms';
 import { MessageService } from 'primeng/api';
 import { UserInfoComponent } from './components/user-info/user-info.component';
 import { SettingsMenuComponent } from './components/settings-menu/settings-menu.component';
@@ -55,7 +56,8 @@ import { OfferSelectionComponent } from './components/offer-selection/offer-sele
     CommonModule,
     ToastModule,
     ButtonModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ReactiveFormsModule,
   ],
   exports: [
     OverlayTitleComponent,

@@ -3,9 +3,13 @@
 @import url('../src/assets/styles/etiya-button.css');
 @import url('../src/assets/styles/etiya-table.css');
 @import url('../src/assets/styles/etiya-navbar.css');
-@import url('../src/assets/styles/etiya-input.css');
 @import url('../src/assets/styles/etiya-check-box.css');
+@import url('../src/assets/styles/etiya-input.css');
 @import url('../src/assets/styles/etiya-title.css');
-body{    
-    background-color: #061F3E !important;
-} 
+@import url('../src/assets/styles/etiya-accordion.css');
+@import url('../src/assets/styles/etiya-menu.css');
+@import url('../src/assets/styles/etiya-toast.css');
+
+body{
+  background-color: #061F3E !important;
+}

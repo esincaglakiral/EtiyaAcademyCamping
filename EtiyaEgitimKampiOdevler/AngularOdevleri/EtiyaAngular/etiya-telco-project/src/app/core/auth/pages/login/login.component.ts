@@ -23,16 +23,16 @@ export class LoginComponent implements OnInit {
       password: [''],
     });
   }
-  
+
   login() {
     this.authService.login(this.loginForm.value).subscribe((response) => {
-      console.log(response, new Date().toISOString());      
-        this.authService.saveToken(response);
-        setTimeout(() => {
-          this.router.navigateByUrl('homepage')
-        }, 1000);
-       
-      
+      console.log(response, new Date().toISOString());
+        // this.authService.saveToken(response);
+        // setTimeout(() => {
+        //   this.router.navigateByUrl('homepage')
+        // }, 1000);
+
+
     });
   }
 

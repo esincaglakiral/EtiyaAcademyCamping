@@ -7,31 +7,34 @@
   </div>
 
   <div class="e-input-container">
+    <form [formGroup]="searchForm">
       <label class="e-label mt-4">ID NUMBER</label>
-      <input type="text" class="e-input" />
+      <input type="text" class="e-input" formControlName="id" />
 
       <label class="e-label">CUSTOMER ID</label>
-      <input type="text" class="e-input" />
+      <input type="text" class="e-input" formControlName="customerId" />
 
       <label class="e-label">ACCOUNT NUMBER</label>
-      <input type="text" class="e-input" />
+      <input type="text" class="e-input" formControlName="accountNumber"/>
 
       <label class="e-label">GSM NUMBER</label>
-      <input type="text" class="e-input" />
+      <input type="text" class="e-input" formControlName="gsmNumber" />
 
       <label class="e-label">FIRST NAME</label>
-      <input type="text" class="e-input" />
+      <input type="text" class="e-input" formControlName="firstName"/>
 
       <label class="e-label">LAST NAME</label>
-      <input type="text" class="e-input" />
+      <input type="text" class="e-input" formControlName="lastname"/>
 
       <label class="e-label">ORDER NUMBER</label>
-      <input type="text" class="e-input" />
+      <input type="text" class="e-input" formControlName="orderNumber"/>
+    </form>
+
 
   </div>
   <div class="e-btn-container">
       <button type="button" class="e-btn-clear">CLEAR</button>
-      <button type="button" class="e-btn-search">SEARCH<img class="e-img-search"
+      <button type="button" class="e-btn-search" (click)="search()">SEARCH<img class="e-img-search"
               src="../../../../assets/img/search-btn-img.png"></button>
   </div>
 </div>
