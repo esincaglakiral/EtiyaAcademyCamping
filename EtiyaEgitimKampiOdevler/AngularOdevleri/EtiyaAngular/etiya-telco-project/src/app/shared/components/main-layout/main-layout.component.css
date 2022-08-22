@@ -5,9 +5,9 @@
     margin-bottom: 10px;
     border: 2px solid #F58220;
     border-right: none !important;
-}
-
-.e-layout-title {
+  }
+  
+  .e-layout-title {
     width: 278px;
     height: 33px;
     margin-left: 62px;
@@ -17,9 +17,9 @@
     font-size: 32px;
     line-height: 33px;
     color: #FFFFFF;
-}
-
-.horizontalLine {
+  }
+  
+  .horizontalLine {
     position: absolute;
     width: 3px;
     height: 182px;
@@ -28,9 +28,9 @@
     background: #F58220;
     border-radius: 2px;
     transform: rotate(-90deg);
-}
-
-.verticalLine {
+  }
+  
+  .verticalLine {
     position: absolute;
     width: 3px;
     height: 175px;
@@ -39,9 +39,9 @@
     background: #F58220;
     border-radius: 2px;
     transform: rotate(-180deg);
-}
-
-.e-title-container {
+  }
+  
+  .e-title-container {
     position: relative;
    margin-top: 70px;
-}
+  }

@@ -1,6 +1,5 @@
-.e-check-box {
+::ng-deep .e-check-box {
     box-sizing: border-box;
-
 
     width: 21px;
     height: 19px;

@@ -1,8 +1,8 @@
-<div class="e-warn-container">
+<div class="e-warn-container" *ngIf="warnAlert == true">
     <div>
-        <img class="e-warn-img" src="../assets/img/warning.png" alt="" />
+        <img class="e-warn-img" src={{warnIcon}} alt="" />
     </div>
-    <div class="d-flex align-items-center">
-        <p class="e-warn-text">{{warnText}}</p>
+    <div>
+        <p class="e-warn-text" [innerHTML]="warnText"></p>
     </div>
-  </div>
+</div>

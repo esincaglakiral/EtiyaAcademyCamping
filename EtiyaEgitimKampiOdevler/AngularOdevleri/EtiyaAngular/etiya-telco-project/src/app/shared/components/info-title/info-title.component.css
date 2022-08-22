@@ -1,5 +1,4 @@
 .e-info-title {
-
     width: 273px;
     height: 33px;
     margin-left: 30px;
@@ -9,59 +8,52 @@
     font-weight: 400;
     font-size: 32px;
     line-height: 33px;
-
     color: #FFFFFF;
-
-}
-.e-title-container-info {
+  }
+  
+  .e-title-container-info {
     position: relative;
-}
-
-.verticalLine-info {
+  }
+  
+  .verticalLine-info {
     position: absolute;
     width: 3px;
     height: 42px;
     left: 295px;
     top: -15px;
-
     background: #F58220;
     border-radius: 2px;
-}
-
-.horizontalLine-info {
-
+  }
+  
+  .horizontalLine-info {
     position: absolute;
     width: 3px;
     height: 105px;
     left: 257px;
     top: -59px;
-
     background: #F58220;
     border-radius: 2px;
     transform: rotate(90deg)
-}
-
-.mini-verticalLine-info {
+  }
+  
+  .mini-verticalLine-info {
     position: absolute;
     width: 3px;
     height: 43px;
     left: 20px;
     top: 3px;
-
     background: #F58220;
     border-radius: 2px;
     transform: rotate(-180deg);
-}
-
-.mini-horizontalLine-info {
-
+  }
+  
+  .mini-horizontalLine-info {
     position: absolute;
     width: 3px;
     height: 104px;
     left: 59px;
     top: -18px;
-
     background: #F58220;
     border-radius: 2px;
     transform: rotate(-90deg);
-}
+  }

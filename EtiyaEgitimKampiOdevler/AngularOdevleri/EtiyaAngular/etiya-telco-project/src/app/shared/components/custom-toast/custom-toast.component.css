@@ -1,0 +1,50 @@
+.e-toast-container {
+    color: white;
+}
+
+::ng-deep .p-toast .p-toast-message .p-toast-message-content {
+    padding: 0.5rem;
+}
+
+::ng-deep .pi-info-circle:before {
+    content: '' !important;
+}
+
+::ng-deep .p-toast .p-toast-message.p-toast-message-info {
+    font-family: 'Anybody';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 25px;
+    color: #061f3e;
+}
+
+::ng-deep .p-toast .p-toast-message .p-toast-message-content .p-toast-detail {
+    font-family: 'Anybody';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 25px;
+
+    color: #f5f5f5;
+}
+
+::ng-deep .p-toast .p-toast-message {
+    margin: 0;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+::ng-deep .p-toast .p-toast-message.p-toast-message-info {
+    border: none;
+    background: #83a6d1;
+}
+
+::ng-deep .p-toast .p-toast-message.p-toast-message-info .p-toast-icon-close {
+    color: #000;
+    background: none;
+}
+
+::ng-deep .p-toast .p-toast-message .p-toast-icon-close:hover {
+    background: none;
+}

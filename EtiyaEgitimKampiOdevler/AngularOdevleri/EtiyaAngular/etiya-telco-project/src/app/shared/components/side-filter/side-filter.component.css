@@ -27,16 +27,6 @@
     color: #FFFFFF;
 }
 
-.verticalLine {
-    border-left: thick solid #F58220;
-    width: 3px;
-    height: 80px;
-    top: 0;
-    left: 50%;
-    margin-left: 5px;
-
-}
-
 .e-search-container {
     box-sizing: border-box;
 
@@ -88,33 +78,6 @@
     color: #FFFFFF;
 }
 
-.e-search-title {
-    width: 284px;
-    height: 33px;
-
-    font-family: 'Anybody';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 32px;
-    line-height: 33px;
-
-    color: #FFFFFF;
-}
-
-.e-search-title-mini {
-    width: 153px;
-    height: 25px;
-
-    margin-left: 10px;
-
-    font-family: 'Anybody';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 25px;
-    color: #FFFFFF;
-}
-
 .e-img-search {
     width: 36px;
 }
@@ -132,21 +95,33 @@
 }
 
 .e-search-title-mini {
+    font-family: 'Anybody';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 25px;
     color: #FFFFFF;
 }
 
 .e-search-title {
+    font-family: 'Anybody';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 33px;
+
     color: #FFFFFF;
     margin-bottom: 50px;
 }
 
+
 .mini-horizontalLine {
 
     position: absolute;
     width: 3px;
     height: 223px;
     left: 40px;
-    top: -32px;
+    top: -60px;
 
     background: #F58220;
     border-radius: 2px;
@@ -158,32 +133,7 @@
     width: 3px;
     height: 62px;
     left: 20px;
-    top: 70px;
-
-    background: #F58220;
-    border-radius: 2px;
-    transform: rotate(-180deg);
-}
-
-.mini-horizontalLine {
-
-    position: absolute;
-    width: 3px;
-    height: 223px;
-    left: 40px;
-    top: -32px;
-
-    background: #F58220;
-    border-radius: 2px;
-    transform: rotate(-90deg);
-}
-
-.mini-verticalLine {
-    position: absolute;
-    width: 3px;
-    height: 62px;
-    left: 20px;
-    top: 65px;
+    top: 35px;
 
     background: #F58220;
     border-radius: 2px;
@@ -196,7 +146,7 @@
     width: 3px;
     height: 137px;
     left: 250px;
-    top: -10px;
+    top: -30px;
 
     background: #F58220;
     border-radius: 2px;
@@ -208,8 +158,15 @@
     width: 3px;
     height: 70px;
     left: 295px;
-    top: 8px;
-
+    top: -15px;
+    
     background: #F58220;
     border-radius: 2px;
 }
+
+.e-title-container{
+    position: relative;
+}
+
+
+
