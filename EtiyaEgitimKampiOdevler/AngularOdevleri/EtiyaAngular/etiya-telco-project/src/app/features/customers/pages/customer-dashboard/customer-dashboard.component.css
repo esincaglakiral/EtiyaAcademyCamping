@@ -5,9 +5,18 @@
 
 .e-search-container{
   margin: 65px 0px 0px 25px;
+
 }
 
 
 /* .e-setting-menu{
   float: right;
+} */
+
+.e-customer-dashboard{
+  overflow: hidden;
+}
+
+/* .e-container{
+  padding:80px
 } */

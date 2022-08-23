@@ -9,6 +9,7 @@ import { Component, Input, OnInit } from '@angular/core';
 export class CustomerDashboardComponent implements OnInit {
   customerList! : Customer[];
   customerList1! : Customer[];
+  lenght!:number;
 
 //@Input() filteredData! : Customer[];
 
@@ -36,5 +37,9 @@ export class CustomerDashboardComponent implements OnInit {
 
     console.log(event)
     this.customerList1 = event
+    this.lenght = this.customerList1.length
+
   }
+
+
 }
