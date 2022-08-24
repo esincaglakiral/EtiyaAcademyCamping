@@ -9,7 +9,11 @@ import {InputTextModule} from 'primeng/inputtext';
 import {CheckboxModule} from 'primeng/checkbox';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { ReactiveFormsModule } from '@angular/forms';
-
+import {ToastModule} from 'primeng/toast';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MessageService } from 'primeng/api';
+import { StoreModule } from '@ngrx/store';
+import { authReducers } from './store/auth.reducers';
 
 
 @NgModule({
@@ -24,7 +28,11 @@ import { ReactiveFormsModule } from '@angular/forms';
     InputTextModule,
     CheckboxModule,
     SharedModule,
-    ReactiveFormsModule
-  ]
+    ReactiveFormsModule,
+    ToastModule,
+    BrowserAnimationsModule,
+    StoreModule.forRoot(authReducers)    
+  ],
+  providers:[MessageService]
 })
 export class AuthModule { }

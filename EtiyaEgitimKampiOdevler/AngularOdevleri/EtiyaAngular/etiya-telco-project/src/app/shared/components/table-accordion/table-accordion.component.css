@@ -64,14 +64,14 @@
     display: none;
 }
 
-.accordion-button:not(.collapsed) {
+.accordion-button:not(.collapsed) {    
     color: #FFFFFF;
 }
 
-.accordion-button:not(.collapsed):first-child img:first-child{
+.accordion-button:not(.collapsed):first-child img:first-child{   
     transform: rotate(180deg);
     color: #FFFFFF;
-
+    
 }
 
 .accordion-item {
@@ -82,7 +82,7 @@
     transition: all 0.3s ;
 }
 
-.accordion-button img {
+.accordion-button img {   
     width: 1.8rem;
     height: 1.8rem;
     margin: 0 10px;
