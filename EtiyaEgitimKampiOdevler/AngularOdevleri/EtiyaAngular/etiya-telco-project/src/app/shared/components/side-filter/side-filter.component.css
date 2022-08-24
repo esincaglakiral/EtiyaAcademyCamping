@@ -29,11 +29,12 @@
 .e-search-container {
     box-sizing: border-box;
     width: 332px;
-    height: 803px;
+    height: 188vh;
     background: #061F3E;
     border: 2px solid #F58220;
     border-radius: 1px;
     border-bottom: inherit;
+
 }
 
 .e-btn-clear {
@@ -150,7 +151,4 @@
 
 .e-title-container{
     position: relative;
-    margin-bottom: -40px;
 }
-
-
