@@ -31,7 +31,6 @@
     font-weight: 700;
     font-size: 20px;
     line-height: 21px;
-    /* identical to box height */
 
     letter-spacing: 0.17em;
 
@@ -110,8 +109,6 @@
     border: 2px solid #F58220!important;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     text-align: center;
-    margin-top:15px;
-    margin-left:25px;
 }
 .table.e-table .table-title th,
 .table.e-table tr td {
