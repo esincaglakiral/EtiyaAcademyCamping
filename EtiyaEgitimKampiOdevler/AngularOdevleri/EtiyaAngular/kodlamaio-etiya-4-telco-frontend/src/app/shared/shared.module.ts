@@ -1,3 +1,4 @@
+
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { OverlayTitleComponent } from './components/overlay-title/overlay-title.component';
@@ -24,8 +25,13 @@ import { MessageService } from 'primeng/api';
 import { CustomToastComponent } from './components/custom-toast/custom-toast.component';
 import { BasketComponent } from './components/basket/basket.component';
 import { TabMenuComponent } from './components/tab-menu/tab-menu.component';
-import { OfferSelectionComponent } from './components/offer-selection/offer-selection.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { TitleLineComponent } from './components/title-line/title-line.component';
+import { ButtonDirective } from './directives/button.directive';
+import { InputDirective } from './directives/input.directive';
+import { CheckBoxDirective } from './directives/check-box.directive';
+import { RouterModule } from '@angular/router';
+import { TableScrollComponent } from './components/table-scroll/table-scroll.component';
 
 
 
@@ -51,14 +57,20 @@ import { ReactiveFormsModule } from '@angular/forms';
     CustomToastComponent,
     BasketComponent,
     TabMenuComponent,
-    OfferSelectionComponent
+    TitleLineComponent,
+    ButtonDirective,
+    InputDirective,
+    CheckBoxDirective,
+    TableScrollComponent
   ],
   imports: [
     CommonModule,
     ToastModule,
     ButtonModule,
     BrowserAnimationsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    RouterModule
+    
   ],
   exports:[
     OverlayTitleComponent,
@@ -80,7 +92,11 @@ import { ReactiveFormsModule } from '@angular/forms';
     CustomToastComponent,
     BasketComponent,
     TabMenuComponent,
-    OfferSelectionComponent
+    TitleLineComponent,
+    ButtonDirective,
+    InputDirective,
+    TableScrollComponent
+
   ],
   providers:[MessageService]
 })
